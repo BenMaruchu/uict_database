@@ -44,7 +44,7 @@
            <ul class="dropdown-menu" role="menu">
              <li><a href="">Profile</a></li>
              <li><a href="">Settings</a></li>
-             <li><a href="../includes/controller/process_logout.php?logout=<?php echo urlencode(true);?>">Sign Out</a></li>
+             <li><a href="../includes/controller/process_logout.php?logout=<?php echo urlencode(true);?>">Logout</a></li>
            </ul>
            </div><!-- end btn-group -->
 	      </aside><!-- end aside -->
