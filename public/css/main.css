@@ -1,0 +1,217 @@
+/* our main css
+*/
+
+body{
+    font: 18px/20px Gafata, "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    margin:0px;
+    
+}
+.u_container{
+    width:100%;
+    margin-top:0px;
+    margin-bottom:0px;
+    background-image: url('../img/test-image.jpg');
+    
+}
+.content{
+    position:relative;
+    
+}
+.content{
+    width:95%;
+    margin-left:auto;
+    margin-right:auto; 
+}
+.u_header{
+    background-color:black;
+    margin:0;
+    opacity:0.8;
+    
+}
+.logo{
+  margin-top: -20px;
+}
+.navigation{
+  position:absolute;
+  top:0px;
+  right:0px;
+}
+.u_nav{
+  position:relative;
+  right:0;
+}
+.u_nav ul{
+  font-size:17px;  
+}
+.u_nav li{
+    float:left;
+    list-style:none;
+    margin-right:20px;
+}
+.u_nav li a{
+    text-decoration: none;
+    color:white;
+}
+.u_nav .list:hover {
+    display:block;
+    background-color:#4682B3;
+    padding:10px 10px 10px 10px;
+}
+
+#banner{
+    background-image: url('../img/test-image.jpg');
+    width:100%;
+    height:300px;
+}
+.message span{
+    position:relative;
+    top:50px;
+    left:30px;
+    font-size:90px;
+    font-family: Tangerine, Arial, Verdana, sans-serif;
+}
+.signup_button{
+    position:absolute;
+    top:0px;
+    right:0px;
+    margin-top:190px;
+}
+.u_button{
+    color:white;    
+    cursor:pointer;   
+    font-family: Gafata, Arial, Verdana, sans-serif;
+    background-image: -moz-linear-gradient(to bottom, #0088cc, #0044cc);
+    background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+   
+    background-repeat: repeat-x;
+   
+}
+.u_button{
+  border-radius:3px;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border:1px;
+  padding:5px 5px 5px 5px;
+  font-size:20px;
+}
+.u_button:hover{
+    background-image: -moz-linear-gradient(to bottom, #0092DB, #235ED3);
+}
+.for_search{
+    background-color:#4682B3;
+    height:30px;
+}
+#search{
+    position:absolute;
+    right:0px;
+}
+.description{
+    border:1px thin #E0E0E0;
+    background-color:#E8E8E8;
+    font-size:21px;
+    line-height: 2;
+}
+.description{
+    margin-top:40px;
+    padding:10px 20px 10px 20px;
+    border-radius:8px;
+
+}
+.u_heading {
+    padding-bottom:0px;
+    
+}
+.u_heading h3{
+    margin:10px 0 10px 0;
+    text-shadow:0px 1px 0px white;
+}
+#u_link{
+    float: right;
+    position: relative;
+    top: -26px;
+}
+#u_link a{
+    text-decoration:none;
+    color:#0044cc;
+}
+#u_link a:hover{
+   text-decoration:none;
+    color:white;
+    cursor:pointer;
+}
+.u_activity a{
+    text-decoration:none;
+    color:#0044cc;  
+}
+.u_activity a:hover{
+    text-decoration:none;
+    color:white;
+    cursor:pointer; 
+}
+
+.u_row{
+  overflow: auto;
+  width:100%;
+}
+
+.u_activity{
+    width:200px;
+    margin-right:39px;
+    float:left;
+}
+.u_footer{
+    margin-top:100px;
+    background-color:#4682B3;
+    margin-bottom:0px;
+    paddin:10px 3px 0 3px;
+    overflow:auto;
+}
+.u_footer_nav{
+  position:relative;
+  right:0;
+}
+.u_footer_nav{
+  font-size:17px;  
+}
+.u_footer_nav  li{
+    list-style:none;
+    margin-right:13px;
+}
+.u_footer_nav li a{
+    text-decoration: none;
+    color:white;
+}
+.copyright{
+    background-color:#0044cc;
+    color:white;
+    position:relative;
+    bottom:-65px;
+    right:5px;
+    
+}
+.copyright p{
+    
+    float:right;
+}
+.u_links{
+    float:left;
+}
+.u_social{
+    float:left;
+}
+.footer_content{
+    border-bottom:1px solid white;
+}
+
+/** icons css **/
+.icon-search{
+    margin-top:5px;
+}
+
+
+
+@media (max-width:990){
+    .u_activity img{
+        width:20;
+        height:100px;
+    }
+}
