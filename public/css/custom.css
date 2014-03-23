@@ -21,15 +21,19 @@
     @media only screen and (min-width: 751px){
     	#login_section{
 	    	width: 400px;
-	    	padding: 20px;
 	    	margin: auto;
-			margin-top:250px;
+			margin-top:180px;
 	    	background: #DDD;  
 	    	box-shadow: 0px 10px 10px -6px #000;
 	    	-webkit-border-radius: 10px;
 	    	-moz-border-radius: 10px;
 	    	border-radius: 10px;
-			
+			position:relative;
+			top:0px;
+			padding-right:30px;
+			padding-left: 30px;
+			padding-top: 10px;
+			padding-bottom:10px;
 			}
 
        .login_header{
@@ -39,6 +43,8 @@
     	    -webkit-border-radius: 8px 8px 0px 0px;
     	    -moz-border-radius: 8px 8px 0px 0px;
     	    border-radius: 8px 8px 0px 0px;
+			color:#FFFFFF;
+			padding-top:3px;
        }
 
        .login_header img{
@@ -105,25 +111,20 @@
     	   margin-top: 5px;
         }
     }
-   
-	
-	
-	p{
-	position:absolute;
-	top: 180px;
-	left:600px;
-	color: red;
-	font-family: 'Open Sans',arial;
-	font-size:30px;
-    
-	
-	}
-	#bar{
-	background-color:;
-	height:10px;
-	}
-	
-	#bar2{
-	background-color:;
-	height:10px;
-	}
+  
+  #reg_number{
+  margin-bottom:5px;
+  margin-top:5px;
+  border-radius:5px;
+  padding-right:15px;
+  
+  }
+  
+  #password{
+  margin-bottom:5px;
+  border-radius:5px;
+  padding-right:15px;
+  }
+  p{
+  margin-top:10px;
+  }

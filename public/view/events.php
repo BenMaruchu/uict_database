@@ -7,15 +7,18 @@
        redirect('login.php');
    }
    */
+
+   require_once('../../includes/model/event.php');
+   $events = $event->get_events();
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Home|UICT Community</title>
-<meta name="viewport" content="width=device-widht, initial-scale=1.0">
-<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
-<link href="css/u_home.css" type="text/css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="../css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="../css/u_home.css" type="text/css" rel="stylesheet">
 <style type="text/css">
 
 </style>
@@ -36,17 +39,27 @@
 	        </ul>
 	      </nav><!-- end u_navigation -->
 	      <div class="u_main_content">
+           <?php
+               if(isset($events) && is_array($events)){
+                 foreach($events as $event){
+                     echo '<div class="event">';
+                        echo '<span class="event_title">'.$event['title'].'</span>';
+                        echo '<span class="event_title">'.$event['category'].'</span>';
+                        //echo '<span class="event_venue">'.$event['venue'].'</span>';
+                        echo '<span class="event_time">'.$event['date'].'</span>';
+                        echo '<span class="event_description">'.$event['description'].'</span>';
+                     echo '</div>';
+                 }
+             }
+           ?>
 	      </div><!-- end u_main_content -->
 	      <aside>
 	         <img src="img/graduated.png">
-           <div class="btn-group">
-	         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Amos Nzaga  <span class="glyphicon glyphicon-globe"></span></button>
+	         <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Amos Nzaga  <span class="glyphicon glyphicon-globe"></span></button>
            <ul class="dropdown-menu" role="menu">
              <li><a href="">Profile</a></li>
-             <li><a href="">Settings</a></li>
-             <li><a href="../includes/controller/process_logout.php?logout=<?php echo urlencode(true);?>">Logout</a></li>
+             <li><a href="">Logout</a></li>
            </ul>
-           </div><!-- end btn-group -->
 	      </aside><!-- end aside -->
       </div><!-- end u_content -->
   
