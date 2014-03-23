@@ -32,17 +32,21 @@
 			top:0px;
 			padding-right:30px;
 			padding-left: 30px;
-			padding-top: 10px;
-			padding-bottom:10px;
+			padding-top: 40px;
+			padding-bottom:40px;
 			}
+		.login_header login{
+			padding-top:100px;
+			
+		}
 
        .login_header{
        	    width: 100%;
     	    height: 50px;
-    	    background: #000;
+    	    background: steelblue;
     	    -webkit-border-radius: 8px 8px 0px 0px;
     	    -moz-border-radius: 8px 8px 0px 0px;
-    	    border-radius: 8px 8px 0px 0px;
+    	    border-radius: 8px 8px 8px 8px;
 			color:#FFFFFF;
 			padding-top:3px;
        }
@@ -116,15 +120,18 @@
   margin-bottom:5px;
   margin-top:5px;
   border-radius:5px;
-  padding-right:15px;
+  padding-right:100px;
   
   }
   
   #password{
   margin-bottom:5px;
   border-radius:5px;
-  padding-right:15px;
+  padding-right:100px;
   }
-  p{
+  .login_header p{
   margin-top:10px;
+  padding-left:100px;
+  font-family: calibri, san-serif,calibra;
+  font-size:25px;
   }
