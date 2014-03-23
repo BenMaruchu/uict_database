@@ -266,3 +266,33 @@ body{
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
+/* for the main content in the homepage*/
+.main_content{
+  width:210%;
+  margin-top:-15px;
+}
+.a_content{
+    border-left:8px solid steelblue;
+    margin-bottom:25px;
+    padding:0px 5px 35px 10px;
+}
+.links_project{
+    padding-top:0px;
+    padding-bottom:0px;
+    margin-right:20px;
+}
+.recent{
+    padding:5px 6px 5px 6px;
+    border-radius:6px;
+    border:1px solid #cccccc;
+}
+.recent_activity{
+     border-bottom:1px solid #cccccc;
+}
+
+.activity_li{
+    border-bottom:1px solid #cccccc;
+}
+.lower_row{
+    margin-top:-50px;
+}
