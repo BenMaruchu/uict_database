@@ -30,15 +30,13 @@
 	    	border-radius: 10px;
 			position:relative;
 			top:0px;
-			padding-right:30px;
-			padding-left: 30px;
-			padding-top: 40px;
-			padding-bottom:40px;
+					
 			}
-		.login_header login{
-			padding-top:100px;
-			
+		.ui_form{
+		    padding:10px 30px 20px 30px;
+
 		}
+		
 
        .login_header{
        	    width: 100%;
@@ -46,9 +44,9 @@
     	    background: steelblue;
     	    -webkit-border-radius: 8px 8px 0px 0px;
     	    -moz-border-radius: 8px 8px 0px 0px;
-    	    border-radius: 8px 8px 8px 8px;
+    	    border-radius: 8px 8px 0px 0px;
 			color:#FFFFFF;
-			padding-top:3px;
+			margin-top:0px;
        }
 
        .login_header img{
@@ -120,18 +118,25 @@
   margin-bottom:5px;
   margin-top:5px;
   border-radius:5px;
-  padding-right:100px;
+  padding-right:135px;
   
   }
   
   #password{
   margin-bottom:5px;
   border-radius:5px;
-  padding-right:100px;
+  padding-right:135px;
   }
   .login_header p{
   margin-top:10px;
   padding-left:100px;
+  padding-top:10px;
   font-family: calibri, san-serif,calibra;
   font-size:25px;
+  }
+  #login{
+  margin-right:110px;
+  }
+  .ui_form a{
+  padding-left:5px;
   }

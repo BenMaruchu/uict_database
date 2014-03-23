@@ -64,6 +64,7 @@
            }
         ?>
      </div>
+	 <div class="ui_form">
      <form name="login" action="../../includes/controller/process_login.php" method="post">
        <label for="reg_number"></label>
        <input type="text" name="reg_number" id="reg_number" required placeholder="Registration number">
@@ -73,8 +74,46 @@
        <input type="submit" value="Login" id="login" class="btn btn-info">
        <span><a href="reset_password.php">Forgot password?</a></span>
      </form>
+	 </div>
    </section>
    <script src="../js/jquery_min.js"></script>
    <script src="../js/bootstrap.min.js"></script>
+   
+      <div class="content">
+                      <div class="u_footer">
+                        <div class="footer_content">
+                        <div class="u_social">
+                            <ul class=" nav u_footer_nav">
+                                <li><a href="www.facebook.com/uict" > <img src="../img/fb-icon.jpg" alt="facebook logo" width="20" height="20" /> Facebook </a></li>
+                                 <li><a href="www.twitter.com/uict" ><img src="../img/twitter-icon.jpg" alt="twitter logo" width="20" height="20" /> Twitter </a></li>
+                                  <li><a href="www.google+.com/uict" ><img src="../img/google.jpg" alt="google+ logo"  width="20" height="20"/> Google+ </a></li>
+                            </ul>
+                        </div>
+                        <div class="container">
+                        <div class="u_links">
+                            <ul class="nav u_footer_nav">
+                                <li><a href="#about" >About</a></li>
+                                <li><a href="#terms" >Terms</a></li>
+                                <li><a href="#privacy">Privacy</a></li>
+                            </ul>
+                        </div>
+                        <div class="u_links">
+                            <ul class="nav u_footer_nav">
+                                <li><a href="#events" >Events</a></li>
+                                <li><a href="#projects" >Project</a></li>
+                                <li><a href="#contacts" >Contacts</a></li>
+                            </ul>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="container">
+                        <div class="nav pull-right">
+                            <p>&copy;2014 UICT Community</p>
+                        </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+  
 </body>
 </html>
