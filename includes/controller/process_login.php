@@ -11,14 +11,14 @@
 
        if($member = $user->authenticate($reg_number,$password)){
        	   $session->login($user);
-           echo "Welcome :".$member['first_name'];
-           redirect('../../public/home.php');
+           //echo "Welcome :".$member['first_name'];
+           redirect('../../public/view/home.php');
        }else{
        	  $message = "Invalid registration number or password. Please try again!";
-   	      redirect('../../public/login.php?message='.urlencode($message));
+   	      redirect('../../public/view/login.php?message='.urlencode($message));
        }
    }else{
    	  $message = "Invalid registration number or password. Please try again!";
-   	  redirect('../../public/login.php?message='.urlencode($message));
+   	  redirect('../../public/view/login.php?message='.urlencode($message));
    }
 ?>

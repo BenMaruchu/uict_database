@@ -13,9 +13,11 @@
        	  $sql = "SELECT * FROM events ORDER BY id DESC";
        	  global $db;
        	  if($result = $db->db_query($sql)){
-             $events = $db_fetch_array($result);
+             $events = $db->db_fetch_array($result);
              return $events;
        	  }
        }
    }
+
+   $event = new Event();
 ?>

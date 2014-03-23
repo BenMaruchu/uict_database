@@ -12,7 +12,7 @@
 </head>
 <body>
    <section id="login_section">
-     <div class="login_header"><img src="img/uict.jpg"></div>
+     <div class="login_header"><img src="../img/uict.jpg"></div>
      <div class="message">
         <?php
            if($_GET){
