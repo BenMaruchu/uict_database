@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Login|UICT Community</title>
+<title>Login | UICT Community</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="../css/bootstrap.min.css" type="text/css" rel="stylesheet">
 <link href="../css/custom.css" type="text/css" rel="stylesheet">
