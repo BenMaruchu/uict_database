@@ -248,3 +248,21 @@ body{
 .diff{
     color:black;
 }
+/* for the search in the homepage*/
+.form-control-min{
+    background-color: #FFFFFF;
+    background-image: none;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555555;
+    display: block;
+    font-size: 20px;
+    height: 30px;
+    line-height: 1.5;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+   
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}

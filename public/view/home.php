@@ -65,9 +65,19 @@
 			    <div class="col-lg-6">
 				   <div class="row ">
 					  
-					  <div class="col-lg-3">
+					  <div class="col-lg-3 offset">
 						 <img class="img img-thumbnail" src="../img/profile_photo.jpg" />
 					  <a href="profile.php" title="Checkout Profile" >Samweli Twesa</a>
+					  </div>
+					  <div class="col-lg-6 col-md-offset-3">
+						 <form action="../controller/search.php" method="get">
+							<div class="input-group">
+							<input type="text" class="form-control-min" size="40"  placeholder="Search a colleague"  />
+							<span class="input-group-btn">
+						        <input type="submit" class="btn btn-primary" value="Search" />
+							</span>
+							</div>
+						 </form>
 					  </div>
 					
 				   </div>
