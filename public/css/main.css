@@ -149,8 +149,7 @@ body{
 }
 
 .u_row{
-  overflow: auto;
-  width:100%;
+   margin-top:35px;
 }
 
 .u_activity{
@@ -211,7 +210,41 @@ body{
 
 @media (max-width:990){
     .u_activity img{
-        width:20;
+        width:20px;
         height:100px;
     }
+}
+/* for the navigation bar*/
+.list a, .active a{
+    color:white;
+}
+.list a:hover{
+    color:black;
+    cursor:pointer;
+}
+.active {
+    background-color:steelblue;
+
+}
+.active a:hover{
+   color:black;
+   cursor:pointer;
+}
+/*for the navigation menu*/
+.list-menu{
+    border-bottom:1px solid #cccccc;
+    
+}
+.navigation-menu{
+    border:1px solid #cccccc;
+}
+.active-menu{
+    background-color:steelblue;
+  
+}
+.active-menu a{
+    color:white;
+}
+.diff{
+    color:black;
 }

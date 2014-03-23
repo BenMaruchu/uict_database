@@ -12,76 +12,77 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Home|UICT Community</title>
+<title>Home | UICT Community</title>
+
 <meta name="viewport" content="width=device-widht, initial-scale=1.0">
 <link href="../css/bootstrap.min.css" type="text/css" rel="stylesheet">
-<link href="../css/u_home.css" type="text/css" rel="stylesheet">
-<style type="text/css">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine" />
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Gafata" />
+<link rel="stylesheet" type="text/css" href="../css/main.css"/>
 
-</style>
-</head>
-<body>
-   
-      <header>
-        <img src="../img/uict.jpg">
-      </header><!-- end header -->
-
-      <div class="u_content">
-	      <nav role="u_navigation">
-	        <ul>
-	           <li><a href="home.php">Home</a></li>
-	           <li><a href="projects.php">Project</a></li>
-	           <li><a href="events.php">Events</a></li>
-	           <li><a href="../../includes/controller/process_logout.php?logout=<?php echo urlencode(true);?>">Logout</a></li>
-	        </ul>
-	      </nav><!-- end u_navigation -->
-	      <div class="u_main_content">
-	      </div><!-- end u_main_content -->
-	      <aside>
-	         <img src="../img/graduated.png">
-           <div class="btn-group">
-	         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Amos Nzaga<span class="glyphicon glyphicon-globe"></span></button>
-           <ul class="dropdown-menu" role="menu">
-             <li><a href="">Profile</a></li>
-             <li><a href="">Settings</a></li>
-             <li><a href="../../includes/controller/process_logout.php?logout=<?php echo urlencode(true);?>">Sign Out</a></li>
-           </ul>
-           </div><!-- end btn-group -->
-	      </aside><!-- end aside -->
-      </div><!-- end u_content -->
-  
-      <footer>
-         <div class="quick_links">
-            <ul>
-               <li><a href="">About</a></li>
-               <li><a href="">Terms</a></li>
-               <li><a href="">Privacy</a></li>
-            </ul>
-            <ul>
-               <li><a href="">Projects</a></li>
-               <li><a href="">Events</a></li>
-               <li><a href="">Contacts</a></li>
-            </ul>
-            <ul>
-               <li><a href=""><img src="../img/fb-icon.jpg"></a></li>
-               <li><a href=""><img src="../img/twitter-icon.jpg"></a></li>
-               <li><a href=""><img src="../img/Google-Plus-icon.png"></a></li>
-            </ul>
-         </div><!-- end of quick links -->
-         <div class="copyright">
-            <p>&copy; 2014 UICT Community</p>
-         </div><!-- end of copyright -->
-         <!--
-         <div class="social_icons">
-            <ul>
-               <li><a href=""><img src="img/fb-icon.jpg"></a></li>
-               <li><a href=""><img src="img/twitter-icon.jpg"></a></li>
-               <li><a href=""><img src="img/Google-Plus-icon.png"></a></li>
-            </ul>
-         </div><!-- end of social_icons -->
-      </footer><!-- end footer -->
-  
-<script src="../js/jquery_min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-</body>
-</html>
+       <body>
+	      <div id="page">
+	      <header class="navbar navbar-static-top bs-docs-nav u_header" id="top" role="banner">
+              <div class="container">
+                 <div class="navbar-header">
+     
+                 <a href="/index.php" class="navbar-brand"><img class="logo img col-sm-4" width="60" src="../img/uict.jpg" alt="uict logo"
+		/></a>   	
+                </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+               
+                     <ul class="nav navbar-nav navbar-right">
+                            <li class="active" ><a href="#home">Home</a></li>
+                            <li class="list"><a href="#projects">Projects</a></li>
+                            <li class="list"><a href="#events">Events</a></li>
+                            <li class="list"><a href="#about">About</a></li>
+                            <li class="list"><a href="login.php">Sign In</a></li>
+                            <li ><a><i  title="click to search" data-toggle="dropdown"
+				class="dropdown-toggle glyphicon glyphicon-search"></i>
+                                </a>
+                            </li>
+                     </ul>
+                </nav>
+               </div>
+         <div class="for_search">
+                       <div class="container">
+                         <div class="btn-group pull-right" >
+                        <div id="search">
+                            <form action="search.php" method="get">
+                                <ul class="nav dropdown-menu" role="menu">
+                                <li><input class="text_"type="text" name="searchQuery" alt="forSearch" id="searchQuery"  
+				     placeholder="search"/></li>
+                                <li><input class="btn " type="submit" name="submit" id="submit" value="submit" /></li>
+				</ul>
+                            </form>
+                        </div>
+                        </div>
+			</div>
+                    </div>
+            </header>
+	      <div class="container">
+		     <div class="row u_row">
+			    <div class="col-lg-6">
+				   <div class="row ">
+					  
+					  <div class="col-lg-3">
+						 <img class="img img-thumbnail" src="../img/profile_photo.jpg" />
+					  <a href="profile.php" title="Checkout Profile" >Samweli Twesa</a>
+					  </div>
+					
+				   </div>
+				   <div class="row u_row">
+					<div class="col-lg-6">
+					  <ul class="nav navigation-menu" >
+						 <li  class="active-menu list-menu"><a><i class="diff glyphicon glyphicon-pushpin"></i> Enrolled Projects</a></li>
+						 <li  class="list-menu"><a><i class="diff glyphicon glyphicon-book"></i> OnGoing Projects</a></li>
+						 <li  class="list-menu"><a><i class="diff glyphicon glyphicon-map-marker"></i> Enrolled Projects</a></li>
+						 <li  class="list-menu"><a><i class="diff glyphicon glyphicon-bookmark"></i> Enrolled Projects</a></li>
+					  </ul>
+					</div>
+				   </div>
+			    </div>
+		     </div>
+	      </div>
+	      </div>
+       </body>
