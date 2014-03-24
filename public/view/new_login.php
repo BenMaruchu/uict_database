@@ -2,7 +2,7 @@
     <html lang='en'>
         <head>
             <meta charset="utf-8" />
-            <title>UICT COMMUNITY</title>
+            <title>UICT | COMMUNITY</title>
             <link href="../css/bootstrap.min.css" type="text/css" rel="stylesheet"> 
             <link href="../css/bootstrap-theme.css" type="text/css" rel="stylesheet"> 
 
