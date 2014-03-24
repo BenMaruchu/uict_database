@@ -1,5 +1,5 @@
 <?php //require_once('../includes/helper/initialize.php'); 
-        require_once('../../includes/helper/functions.php');
+        require_once('../includes/helper/functions.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,8 +7,8 @@
 <meta charset="UTF-8">
 <title>Login|UICT Community</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="../css/bootstrap.min.css" type="text/css" rel="stylesheet">
-<link href="../css/custom.css" type="text/css" rel="stylesheet">
+<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="css/custom.css" type="text/css" rel="stylesheet">
 </head>
 
  <body>   
@@ -21,12 +21,8 @@
            }
         ?>
      </div>
-<<<<<<< HEAD:public/login.php
      <form name="login" action="../includes/controller/process_login.php" method="post" >
 	 <fieldset>
-=======
-     <form name="login" action="../../includes/controller/process_login.php" method="post">
->>>>>>> 368dffb53f34542c6a9f3284db68f69dad48c0f5:public/view/login.php~
        <label for="reg_number"></label>
        <input type="text" name="reg_number" id="reg_number" required placeholder="Registration number" size="24"> <!--the size of the box is altered here!-->
        <label for="password"></label>
@@ -37,12 +33,8 @@
 	   </fieldset>
      </form>
    </section>
-<<<<<<< HEAD:public/login.php
 
    <script src="js/jquery_min.js"></script>
-=======
-   <script src="../js/jquery_min.js"></script>
->>>>>>> 368dffb53f34542c6a9f3284db68f69dad48c0f5:public/view/login.php~
    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
