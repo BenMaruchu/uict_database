@@ -106,10 +106,12 @@
                         </div>
                         </div>
                         </div>
+			<div class="copyright">
                         <div class="container">
-                        <div class="nav pull-right">
-                            <p>&copy;2014 UICT Community</p>
+                        <div class="nav pull-right ">
+                            <p id="copyText" >&copy;2014 UICT Community</p>
                         </div>
+			</div>
                         </div>
                         
                       </div>

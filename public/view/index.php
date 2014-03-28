@@ -25,10 +25,10 @@
             <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
                
                      <ul class="nav navbar-nav navbar-right">
-                            <li class="active" ><a href="#home">Home</a></li>
-                            <li class="list"><a href="#projects">Projects</a></li>
-                            <li class="list"><a href="#events">Events</a></li>
-                            <li class="list"><a href="#about">About</a></li>
+                            <li class="active" ><a href="index.php">Home</a></li>
+                            <li class="list"><a href="projects.php">Projects</a></li>
+                            <li class="list"><a href="events.php">Events</a></li>
+                            <li class="list"><a href="about.php">About</a></li>
                             <li class="list"><a href="login.php">Sign In</a></li>
                             <li ><a><i  title="click to search" data-toggle="dropdown"
 				class="dropdown-toggle glyphicon glyphicon-search"></i>
@@ -76,7 +76,7 @@
                       <div class="content">
                         <div class="description" >
                             <div class="u_heading">
-                            <h3>Become Innovative While Studying</h3>
+                            <h2>Become Innovative While Studying</h2>
                             </div>
                             <p>
                               University and college students have vital
@@ -167,10 +167,12 @@
                         </div>
                         </div>
                         </div>
+			<div class="copyright">
                         <div class="container">
-                        <div class="nav pull-right">
-                            <p>&copy;2014 UICT Community</p>
+                        <div class="nav pull-right ">
+                            <p id="copyText" >&copy;2014 UICT Community</p>
                         </div>
+			</div>
                         </div>
                         
                       </div>
