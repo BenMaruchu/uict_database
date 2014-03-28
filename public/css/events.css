@@ -1,0 +1,62 @@
+/****** Events Style ******/
+
+.header_events{
+     border-bottom: 1px solid #CCCCCC;
+}
+
+.event{
+        padding-top: 20px;
+        
+    }
+
+    .event span{
+        display: block;
+        color: #444;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .event span:last-child{
+        border-bottom: 1px dotted steelblue;
+    }
+
+    .event .event_title{
+        font: bold 18px candara, arial, calibri, sans-serif,serif,"Times New Roman";
+    }
+
+    .event .event_time{
+        font-size: 15px;
+    }
+
+    .event .event_description{
+        font-size: 15px;
+    }
+
+    .event .event_more{
+        font-size: 12px;
+    }
+
+    .event .event_more a{
+        float: right;
+        margin-right: 20px;
+    }
+
+    .event .event_tag{
+        font-size: 12px;
+        display: inherit;
+        color: #999;
+    }
+
+    .event .event_tag.description{
+        margin-top: 8px;
+    }
+
+    .event .event_publisher{
+        font-size: 13px;
+    }
+
+    .search_events{
+    	background: #EFEFEF;
+    	padding: 10px 0px 10px 20px;
+    }
