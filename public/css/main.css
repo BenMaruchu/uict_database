@@ -80,8 +80,8 @@ body{
     color:white;    
     cursor:pointer;   
     font-family: Gafata, Arial, Verdana, sans-serif;
-    background-image: -moz-linear-gradient(to bottom, #0088cc, #0044cc);
-    background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+    background-image: -moz-linear-gradient(to bottom, #5C8BB2, #4E85B2);
+    background-image: linear-gradient(to bottom, #5C8BB2, #4E85B2);
    
     background-repeat: repeat-x;
    
