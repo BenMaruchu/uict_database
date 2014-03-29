@@ -1,7 +1,8 @@
 <?php
-    require_once('../../includes/model/event.php');
     require_once('../../includes/services/Template.php');
-    $events = $event->get_events();
+    require_once('../../includes/model/project.php');
+    $community_project = $project->get_projects();
+    
 ?>
 <!DOCTYPE html>
     <html lang='en'>
@@ -20,7 +21,7 @@
         </head>
         <body>
             <div id="page">
-               <div id="header">
+            <div id="header">
                <?php
                    try{
                        $template->render('header.php');
@@ -34,7 +35,7 @@
                     <div class="row">
                        <div class="container">
                          <div class="col-md-12 header_events">
-                           <h3>Events</h3>
+                           <h3>Projects</h3>
                          </div><!-- end col-md-12 -->
                        </div><!-- end container -->
                     </div><!-- end row page header -->
@@ -54,15 +55,15 @@
                         </div><!-- end row for search boxes-->
                         <div class="row">
                           <?php
-                             if(isset($events) && is_array($events)){
-                               foreach($events as $event){
+                             if(isset($community_project) && is_array($community_project)){
+                               foreach($community_project as $project){
                                    echo '<div class="event">';
-                                      echo '<span class="event_tag"></span><span class="event_title">'.$event['title'].'</span>';
+                                      echo '<span class="event_tag"></span><span class="event_title">'.$project['title'].'</span>';
                                       //echo '<span class="event_title">'.$event['category'].'</span>';
-                                      echo '<span class="event_tag">Description </span><span class="event_description">'.$event['description'].'</span>';
+                                      echo '<span class="event_tag">Description </span><span class="event_description">'.$project['description'].'</span>';
                                       echo '<span class="event_more"><a href="#">Read more</a></span>';
-                                      echo '<span class="event_tag">Date & Time </span><span class="event_time">'.$event['date'].'</span>';
-                                      echo '<span class="event_tag">Posted By </span><span class="event_publisher">Faith Assenga - Communication Director</span>';
+                                      echo '<span class="event_tag">Begin Date </span><span class="event_time">'.$project['begin_date'].'</span>';
+                                      echo '<span class="event_tag">Initiated By </span><span class="event_publisher">Amos Nzaga</span>';
                                    echo '</div>';
                                 }
                              }
@@ -75,40 +76,14 @@
 
                       <!-- content -->
                       <div class="content">
-                      <div class="u_footer">
-                        <div class="footer_content">
-                        <div class="u_social">
-                            <ul class=" nav u_footer_nav">
-                                <li><a href="www.facebook.com/uict" > <img src="../img/fb-icon.jpg" alt="facebook logo" width="20" height="20" /> Facebook </a></li>
-                                 <li><a href="www.twitter.com/uict" ><img src="../img/twitter-icon.jpg" alt="twitter logo" width="20" height="20" /> Twitter </a></li>
-                                  <li><a href="www.google+.com/uict" ><img src="../img/google.jpg" alt="google+ logo"  width="20" height="20"/> Google+ </a></li>
-                            </ul>
-                        </div>
-                        <div class="container">
-                        <div class="u_links">
-                            <ul class="nav u_footer_nav">
-                                <li><a href="#about" >About</a></li>
-                                <li><a href="#terms" >Terms</a></li>
-                                <li><a href="#privacy">Privacy</a></li>
-                            </ul>
-                        </div>
-                        <div class="u_links">
-                            <ul class="nav u_footer_nav">
-                                <li><a href="#events" >Events</a></li>
-                                <li><a href="#projects" >Project</a></li>
-                                <li><a href="#contacts" >Contacts</a></li>
-                            </ul>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="container">
-                        <div class="nav pull-right">
-                            <p>&copy;2014 UICT Community</p>
-                        </div>
-                        </div>
-                        
-                      </div>
-                    </div>
+                      <?php
+                          try{
+                             $template->render('footer.php');
+                          }catch(Exception $e){
+                             echo "Message: ".$e->getMessage();
+                          }
+                      ?>
+                    </div><!-- end of content -->
                 
             </div>
         </body>

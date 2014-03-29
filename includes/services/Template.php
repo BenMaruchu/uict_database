@@ -20,4 +20,6 @@ class Template{
    }
 
 }
+
+$template = new Template();
 ?>

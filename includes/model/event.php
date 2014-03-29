@@ -2,7 +2,7 @@
    /* Event Object should:-
     * 1. Add event
     * 2. Edit event
-    * 3. Delete
+    * 3. Delete event
     */
 
    require_once('database.php');

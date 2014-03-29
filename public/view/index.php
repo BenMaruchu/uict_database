@@ -1,9 +1,6 @@
 <?php
 
  include('../../includes/services/Template.php');
- 
-
-$template = new Template();
 
 // variable to detect the index page
 
