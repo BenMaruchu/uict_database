@@ -59,7 +59,7 @@ body{
 }
 
 #banner{
-    background-image: url('../img/test-image.jpg');
+    background-image: url('../img/test-image.jpg');	
     width:100%;
     height:300px;
 }
@@ -95,6 +95,8 @@ body{
 }
 .u_button:hover{
     background-image: -moz-linear-gradient(to bottom, #0092DB, #235ED3);
+    text-decoration: none;
+    color:black;
 }
 .for_search{
     background-color:#4682B3;
@@ -108,7 +110,7 @@ body{
     border:1px thin #E0E0E0;
     background-color:#E8E8E8;
     font-size:21px;
-    line-height: 2;
+    line-height: 1.7;
 }
 .description{
     margin-top:40px;
@@ -118,10 +120,12 @@ body{
 }
 .u_heading {
     padding-bottom:0px;
+    border-bottom:1px solid #cccccc;
+    margin-bottom:25px;
     
 }
-.u_heading h3{
-    margin:10px 0 10px 0;
+.u_heading h2{
+    margin:10px 0 0px 0;
     text-shadow:0px 1px 0px white;
 }
 #u_link{
@@ -158,18 +162,21 @@ body{
     float:left;
 }
 .u_footer{
-    margin-top:100px;
+    margin-top:150px;
     background-color:#4682B3;
     margin-bottom:0px;
-    paddin:10px 3px 0 3px;
+    paddin:5px 3px 0 3px;
     overflow:auto;
 }
 .u_footer_nav{
   position:relative;
   right:0;
 }
+.u_footer_nav li a{
+    padding:5px 20px;
+}
 .u_footer_nav{
-  font-size:17px;  
+  font-size:12px;  
 }
 .u_footer_nav  li{
     list-style:none;
@@ -180,16 +187,15 @@ body{
     color:white;
 }
 .copyright{
-    background-color:#0044cc;
+    background-color:black;
+    opacity:0.9;
     color:white;
-    position:relative;
-    bottom:-65px;
-    right:5px;
     
 }
-.copyright p{
-    
-    float:right;
+
+#copyText{
+    padding-top:5px;
+    font-size:10px;
 }
 .u_links{
     float:left;
@@ -247,4 +253,52 @@ body{
 }
 .diff{
     color:black;
+}
+/* for the search in the homepage*/
+.form-control-min{
+    background-color: #FFFFFF;
+background-image: none;
+border: 1px solid #CCCCCC;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+color: #555555;
+display: block;
+font-size: 20px;
+height: 34px;
+line-height: 1.5;
+padding: 6px 12px;
+transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 0px;
+border-top-left-radius: 4px;
+}
+/* for the main content in the homepage*/
+.main_content{
+  width:210%;
+  margin-top:-15px;
+  margin-bottom:100px;
+}
+.a_content{
+    border-left:8px solid steelblue;
+    margin-bottom:25px;
+    padding:0px 5px 35px 10px;
+}
+.links_project{
+    padding-top:0px;
+    padding-bottom:0px;
+    margin-right:20px;
+}
+.recent{
+    padding:5px 6px 5px 6px;
+    border-radius:6px;
+    border:1px solid #cccccc;
+}
+.recent_activity{
+     border-bottom:1px solid #cccccc;
+}
+
+.activity_li{
+    border-bottom:1px solid #cccccc;
+}
+.lower_row{
+    margin-top:-130px;
 }

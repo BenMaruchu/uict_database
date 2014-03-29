@@ -3,7 +3,7 @@
     <html lang='en'>
         <head>
             <meta charset="utf-8" />
-            <title>UICT COMMUNITY</title>
+            <title>EventsForm</title>
             <link href="../css/bootstrap.min.css" type="text/css" rel="stylesheet"> 
             <link href="../css/bootstrap-theme.css" type="text/css" rel="stylesheet"> 
 
@@ -15,7 +15,7 @@
         </head>
         <body>
             <div id="page">
-            <header class="navbar navbar-static-top bs-docs-nav u_header" id="top" role="banner">
+			<header class="navbar navbar-static-top bs-docs-nav u_header" id="top" role="banner">
               <div class="container">
                  <div class="navbar-header">
      
@@ -51,103 +51,85 @@
                         </div>
                         </div>
 			</div>
-                    </div>
+           </div>
             </header>
-                
-                      <div id="banner">
-                            <div class="container">
-                            <div class="message pull-left">
-                                <span>Exploring Technologies </span>
+			<div class="container">
+			<div class="row ">
+                    <!-- u_header -->
+                      <div id="bannerForRegistration">
+                            <div class="message">
+                                <span>Events Page </span>
                             </div>
-                            </div>
-                            <div class="container">
-                            <div class="content" >
-                            <div class="signup_button">
-                                <button class="u_button" >Sign Up, It is fast</button>
-                            </div>
-                            </div>
-                            </div>
+                            
                         </div>
+						</div>
                         <!-- banner -->
                       <!-- header -->
-                      </div>
-                <!-- container -->
-                      <div class="container">
-                      <div class="content">
+                     <div class="row u_row">
+					 <div class="content">
                         <div class="description" >
                             <div class="u_heading">
-                            <h3>Become Innovative While Studying</h3>
+                            <h4>DESCRIPTION</h4>
                             </div>
-                            <p>
-                              University and college students have vital
-                              role to play for driving innovation through intellectual curiosity and
-                              discovery leading to creative innovative ideas in the context of
-                              fast growing economy and rapid changing technology, Recognizing students
-                              unexplored potential, UICT Community encourages project based learning to
-                              seek ICT solutions to local problems starting with the scope of the
-                              University Of Dar es Salaam.  
+                            <p>There are a lot of exciting things to see and do in UICT COMMUNITY....
+							It is a beautiful Community with different events and visual journey of the UICT days
+							Stay tuned for more interesting and inspiring upcoming events... 
+                           
                             </p>
                             
-                            <div id="u_link">
-                                <a href="#more_on_uict">Read More</a>
-                            </div>
-                            
                            
-                         </div>
-                        </div>
-                        <!-- description -->
-                        <div class="container">
-                        
-                        <div class="u_row" >
+					</div>
+					</div>
+					</div>
+					
+				<div class="row u_row" >
                             <div class="col-md-3">
-                              <div class="u_heading">
-                            <h4>Project Based Learning</h4>
-                            </div>
-                              <img  src="../img/projects.jpg" alt="project image"  width="225" height="150"/> 
-                              <p>Share and develop your skills with us by joining project execution teams </p>
-                              <a href="#more_on_uict">Read More</a>
+                             
+                              <img  src="../img/bibo.jpg" alt="event image"  width="225" height="150"/> 
+                              <p></p>
+                              
                             </div>
                         
                            <div class="col-md-3">
-                              <div class="u_heading">
-                            <h4>Sport and Socialization</h4>
-                            </div>
-                              <img  src="../img/sports.jpg" alt="sports image"  width="225" height="150"/>
-                              <p>Have fun and grow your network outside class by joining in our sports bonanza </p>
-                              <a href="#more_on_uict">Read More</a>
-                            </div>
+                              <img  src="../img/nkurumah.jpg" alt="event image"  width="225" height="150"/>
+                              </div>
+							
                         <div class="col-md-3">
-                              <div class="u_heading">
-                            <h4>Charity</h4>
-                            </div>
-                              <img  src="../img/charity.png" alt="charity image"  width="225" height="150"/>
-                              <p>Become part of others solution by joining hands with us to serve the outside society </p>
-                              <a href="#more_on_uict">Read More</a>
-                            </div>
+                              <img  src="../img/chuo.jpg" alt="event image"  width="225" height="150"/>
+                             </div>
                         
                          <div class="col-md-3">
-                              <div class="u_heading">
-                            <h4>Sport and Socialization</h4>
-                            </div>
-                              <img  src="../img/sports.jpg" alt="sports image"  width="225" height="150"/>
-                              <p>Have fun and grow your network outside class by joining in our sports bonanza </p>
-                              <a href="#more_on_uict">Read More</a>
-                            </div>
+                              <img  src="../img/mabibo.jpg" alt="event image"  width="225" height="150"/>
+                          </div>
+						  
                       </div>
-                        <!-- u_row -->
-                      
+					  
+					  <div class="row u_row" >
+                            <div class="col-md-3">
+                              <img  src="../img/biboo.jpg" alt="event image"  width="225" height="150"/> 
+                             </div>
+                        
+                          <div class="col-md-3">
+                             <img  src="../img/hall2.jpg" alt="event image"  width="225" height="150"/>
+                           </div>
+							
+                       <div class="col-md-3">
+                              <img  src="../img/ucc.jpg" alt="event image"  width="225" height="150"/>
+                        </div>
+                        
+                         <div class="col-md-3">
+                             <img  src="../img/library.jpg" alt="event image"  width="225" height="150"/>
+                           </div>
                       </div>
-                        <!-- container -->
-                      </div>
-                      <!-- content -->
-                      <div class="content">
+              
+				<div class="content">
                       <div class="u_footer">
                         <div class="footer_content">
                         <div class="u_social">
                             <ul class=" nav u_footer_nav">
                                 <li><a href="www.facebook.com/uict" > <img src="../img/fb-icon.jpg" alt="facebook logo" width="20" height="20" /> Facebook </a></li>
                                  <li><a href="www.twitter.com/uict" ><img src="../img/twitter-icon.jpg" alt="twitter logo" width="20" height="20" /> Twitter </a></li>
-                                  <li><a href="www.google+.com/uict" ><img src="../img/Google-Plus-icon.jpg" alt="google+ logo"  width="20" height="20"/> Google+ </a></li>
+                                  <li><a href="www.google+.com/uict" ><img src="../img/google.jpg" alt="google+ logo"  width="20" height="20"/> Google+ </a></li>
                             </ul>
                         </div>
                         <div class="container">
@@ -175,7 +157,6 @@
                         
                       </div>
                     </div>
-                
             </div>
         </body>
     </html>

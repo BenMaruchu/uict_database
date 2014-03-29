@@ -1,3 +1,14 @@
+<?php
+
+ include('../../includes/services/Template.php');
+ 
+
+$template = new Template();
+
+// variable to detect the index page
+
+?>
+
 <!DOCTYPE html>
     <html lang='en'>
         <head>
@@ -14,45 +25,18 @@
         </head>
         <body>
             <div id="page">
-            <header class="navbar navbar-static-top bs-docs-nav u_header" id="top" role="banner">
-              <div class="container">
-                 <div class="navbar-header">
-     
-                 <a href="/index.php" class="navbar-brand"><img class="logo img col-sm-4" src="../img/uict.jpg" alt="uict logo"
-		/></a>   	
-                </div>
-            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-               
-                     <ul class="nav navbar-nav navbar-right">
-                            <li class="active" ><a href="#home">Home</a></li>
-                            <li class="list"><a href="#projects">Projects</a></li>
-                            <li class="list"><a href="events1.php">Events</a></li>
-                            <li class="list"><a href="#about">About</a></li>
-                            <li class="list"><a href="login.php">Sign In</a></li>
-                            <li ><a><i  title="click to search" data-toggle="dropdown"
-				class="dropdown-toggle glyphicon glyphicon-search"></i>
-                                </a>
-                            </li>
-                     </ul>
-                </nav>
-               </div>
-         <div class="for_search">
-                       <div class="container">
-                         <div class="btn-group pull-right" >
-                        <div id="search">
-                            <form action="search.php" method="get">
-                                <ul class="nav dropdown-menu" role="menu">
-                                <li><input class="text_"type="text" name="searchQuery" alt="forSearch" id="searchQuery"  
-				     placeholder="search"/></li>
-                                <li><input class="btn " type="submit" name="submit" id="submit" value="submit" /></li>
-				</ul>
-                            </form>
-                        </div>
-                        </div>
-			</div>
-                    </div>
-            </header>
-
+                    <div id="header">
+		    <?php
+		      try{
+			$template->render('header.php');
+		      }
+		      catch(Exception $e){
+			echo 'Message: '. $e->getMessage();
+		      }
+		    
+		    ?>
+		    </div>
+                
                       <div id="banner">
                             <div class="container">
                             <div class="message pull-left">
@@ -62,21 +46,20 @@
                             <div class="container">
                             <div class="content" >
                             <div class="signup_button">
-                                <button class="u_button" >Sign Up, It is fast</button>
+                                <a href="registrationForm.php" class="u_button" >Sign Up, It is fast</a>
                             </div>
                             </div>
                             </div>
                         </div>
                         <!-- banner -->
                       <!-- header -->
-                  <!--
                       </div>
-                <!-- container --> 
+                <!-- container -->
                       <div class="container">
                       <div class="content">
                         <div class="description" >
                             <div class="u_heading">
-                            <h3>Become Innovative While Studying</h3>
+                            <h2>Become Innovative While Studying</h2>
                             </div>
                             <p>
                               University and college students have vital
@@ -139,7 +122,7 @@
                       </div>
                         <!-- container -->
                       </div>
-                      <!-- content --> 
+                      <!-- content -->
                       <div class="content">
                       <div class="u_footer">
                         <div class="footer_content">
@@ -167,10 +150,12 @@
                         </div>
                         </div>
                         </div>
+			<div class="copyright">
                         <div class="container">
-                        <div class="nav pull-right">
-                            <p>&copy;2014 UICT Community</p>
+                        <div class="nav pull-right ">
+                            <p id="copyText" >&copy;2014 UICT Community</p>
                         </div>
+			</div>
                         </div>
                         
                       </div>
@@ -179,3 +164,5 @@
             </div>
         </body>
     </html>
+    
+

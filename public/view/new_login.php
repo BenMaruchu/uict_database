@@ -1,23 +1,25 @@
-<?php //require_once('../includes/helper/initialize.php'); 
-        require_once('../../includes/helper/functions.php');
-?>
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Login | UICT Community</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="../css/bootstrap.min.css" type="text/css" rel="stylesheet">
-<link href="../css/custom.css" type="text/css" rel="stylesheet">
-<link href="../css/main.css" type="text/css" rel="stylesheet">
-</head>
-<body>
+    <html lang='en'>
+        <head>
+            <meta charset="utf-8" />
+            <title>UICT | COMMUNITY</title>
+            <link href="../css/bootstrap.min.css" type="text/css" rel="stylesheet"> 
+            <link href="../css/bootstrap-theme.css" type="text/css" rel="stylesheet"> 
 
-    <header class="navbar navbar-static-top bs-docs-nav u_header" id="top" role="banner">
+            <link rel="stylesheet" type="text/css" href="../css/style.css" />
+            <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine" />
+            <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Gafata" />
+            <link rel="stylesheet" type="text/css" href="../css/main.css"/>
+			<link rel="stylesheet" type ="text/css" href="../css/login.css">
+            
+        </head>
+<body>
+ <header class="navbar navbar-static-top bs-docs-nav u_header" id="top" role="banner">
               <div class="container">
                  <div class="navbar-header">
      
-                 <a href="/index.php" class="navbar-brand"><img class="logo img col-sm-4" width="60" src="../img/uict.jpg" alt="uict logo"/></a>   	
+                 <a href="/index.php" class="navbar-brand"><img class="logo img col-sm-4" src="../img/uict.jpg" alt="uict logo"
+		/></a>   	
                 </div>
             <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
                
@@ -51,36 +53,47 @@
                     </div>
             </header>
 
-
-   <section id="login_section">
-     <div class="login_header">   <!--the small uict logo was here before, it is replaced with login message now!-->
-	 
-	 <p>Sign in to UICT!</p>
-	 </div>    
-     <div class="message">
+<section class="login_section">
+<div class="login_header"> 
+<br />
+<p>
+<br />
+Please Login
+</p>
+ </div>
+ 
+  <div class="message">
         <?php
            if($_GET){
               echo output_message(urldecode($_GET['message']));
            }
         ?>
      </div>
-	 <div class="ui_form">
-     <form name="login" action="../../includes/controller/process_login.php" method="post">
-       <label for="reg_number"></label>
-       <input type="text" name="reg_number" id="reg_number" required placeholder="Registration number">
-       <label for="password"></label>
-       <input type="password" name="password" id="password" required placeholder="Password">
-       <label for="login"></label>
-       <input type="submit" value="Login" id="login" class="btn btn-info">
-       <span><a href="reset_password.php">Forgot password?</a></span>
-     </form>
-	 </div>
-   </section>
+ 
+ <div class ="login_form">
+ 
+ <form name="login" action="../../includes/controller/process_login.php" method="post">
+   <label for="reg_number"></label>
+   <input type="text" name="reg_number" id="reg_number" required placeholder="Registration number">
+ <br />
+ <label for="password"></label>
+ <input type="text" name="password" id="password" required placeholder="Password">
+ <br />
+<input type="checkbox"id ="remember_me"> remember me 
+<span id="forget">
+<a href="resert_password.php">Forgot password?</a>
+</span>
+<br />
+ <label for="login"></label>
+<input type="submit" id="submit" value="login">
+ </form>
+ 
+ </div>
+</section>
    <script src="../js/jquery_min.js"></script>
    <script src="../js/bootstrap.min.js"></script>
    
-      <div class="content">
-                      <div class="u_footer">
+ <div class="u_footer">
                         <div class="footer_content">
                         <div class="u_social">
                             <ul class=" nav u_footer_nav">
@@ -106,16 +119,13 @@
                         </div>
                         </div>
                         </div>
-			<div class="copyright">
                         <div class="container">
-                        <div class="nav pull-right ">
-                            <p id="copyText" >&copy;2014 UICT Community</p>
+                        <div class="nav pull-right">
+                            <p>&copy;2014 UICT Community</p>
                         </div>
-			</div>
                         </div>
                         
                       </div>
                     </div>
-  
 </body>
 </html>
