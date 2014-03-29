@@ -40,15 +40,15 @@ $template = new Template();
 			<div class="row ">
                     <!-- u_header -->
                       <div id="bannerForRegistration">
-                            <div class="message">
-                                <span>Registration Form </span>
+                            <div class="">
+                                <h2>Registration Form </h2>
                             </div>
                             
                         </div>
 			</div>
                         <!-- banner -->
                       <!-- header -->
-                     <div class="row u_row">
+                     <div class="row">
 			<form action="" class="form-horizontal u_row" role="form">
 			<div class="col-lg-6 u_row">
 				
@@ -75,6 +75,7 @@ $template = new Template();
 				      </div>
 				    </div>
 				    
+				    <div class="form-group">
 				      <label class="col-sm-2 control-label" >Sex:</label>
 				      <div class="radio col-sm-3">
 					<label>
@@ -87,7 +88,9 @@ $template = new Template();
 					<input name="gender" type="radio" class="form-control" value="female" /> Female
 					</label>
 				      </div>
+				    </div>
 				    
+				    <div class="form-group">
 				    
 				      <label class="col-sm-2 control-label" >Marital status:</label>
 				      <div class="radio col-sm-3">
@@ -101,6 +104,7 @@ $template = new Template();
 					<input name="maritial_status" type="radio" class="form-control" value="married" /> Married
 				        </label>
 				    </div>
+				      </div>
 				
 					
 	    	
@@ -138,13 +142,13 @@ $template = new Template();
 				<legend>Personal Profile:</legend>
 				
 				<div class="form-group">
-				  <label class="col-sm-2 control-label" >Skills</label>
+				  <label class="col-sm-2 control-label" >Skills:</label>
 				  <div class="col-sm-6">
 				    <textarea name="skills" rows="3" cols="60" class="form-control" ></textarea>
 				  </div>
 				</div>
 				<div class="form-group">
-				  <label class="col-sm-2 control-label" >Hobbies & Interests</label>
+				  <label class="col-sm-2 control-label" >Hobbies & Interests:</label>
 				  <div class="col-sm-6">
 				    <textarea name="hobbies" rows="3" cols="60" class="form-control" ></textarea>
 				  </div>
@@ -155,7 +159,7 @@ $template = new Template();
                       
 			    </div>
 			  <div class="col-lg-6 u_row">
-		    
+		              <div class="u_row">
 			
 				<legend>Sensitive Details:</legend>
 				
@@ -176,7 +180,7 @@ $template = new Template();
 				     <input type="submit" value="Submit" class="u_button form-control u_row" />
 				    </div>
 				</div>
-				
+				</div>
 
                       
 			    </div>
