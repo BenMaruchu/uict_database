@@ -1,6 +1,6 @@
 <?php
 class CurrentPage {
-    static $currentPage = "";
+    public static $currentPage = "";
    
 }
 

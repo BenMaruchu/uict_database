@@ -1,6 +1,9 @@
 <?php
 
  include('../../includes/services/Template.php');
+ include('../../includes/services/CurrentPage.php');
+ 
+ CurrentPage::$currentPage = "home";
  
 
 $template = new Template();
