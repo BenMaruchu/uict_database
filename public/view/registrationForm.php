@@ -25,7 +25,7 @@ $template = new Template();
         </head>
         <body>
             <div id="page">
-			<div id="header">
+		    <div id="header">
 		    <?php
 		      try{
 			$template->render('header.php');
@@ -49,8 +49,9 @@ $template = new Template();
                         <!-- banner -->
                       <!-- header -->
                      <div class="row u_row">
+			<form action="" class="form-horizontal u_row" role="form">
 			<div class="col-lg-6 u_row">
-				<form action="" class="form-horizontal u_row" role="form">
+				
 				    
 				    <legend>Personal information:</legend>
 				    <div class="form-group">
@@ -73,37 +74,43 @@ $template = new Template();
 					<input name="degree_program" type="text" class="form-control" />
 				      </div>
 				    </div>
-				    <div class="form-group">
+				    
 				      <label class="col-sm-2 control-label" >Sex:</label>
-				      <div class="col-sm-3">
-					<input name="male" type="checkbox" class="form-control" /> Male
+				      <div class="radio col-sm-3">
+					<label>
+					<input name="gender" type="radio" class="form-control" value="male" /> Male
+					</label>
 				      </div>
-				      <div class="col-sm-3">
-					<input name="female" type="checkbox" class="form-control" /> Female
+				      
+				      <div class="radio col-sm-3">
+					<label>
+					<input name="gender" type="radio" class="form-control" value="female" /> Female
+					</label>
 				      </div>
-				    </div>
-				    <div class="form-group">
+				    
+				    
 				      <label class="col-sm-2 control-label" >Marital status:</label>
-				      <div class="col-sm-3">
-					<input name="single" type="checkbox" class="form-control" /> Single
+				      <div class="radio col-sm-3">
+					<label>
+					<input name="maritial_status" type="radio" class="form-control" value="single" /> Single
+					</label>
 				      </div>
-				      <div class="col-sm-3">
-					<input name="married" type="checkbox" class="form-control" /> Married
-				      </div>
+				      
+				      <div class="radio col-sm-3">
+					<label>
+					<input name="maritial_status" type="radio" class="form-control" value="married" /> Married
+				        </label>
 				    </div>
 				
 					
-					
-                    <div class="col-lg-6 u_row">
-	
-			
-			    
+	    	
+	                   <div class="u_row">
 			    <legend>Contacts:</legend>
 			    
 		               <div class="form-group">
 				  <label class="col-sm-2 control-label" >Mailing Address:</label>
 				  <div class="col-sm-6">
-				    <input name="mailing_address" type="text" class="form-control" />
+				    <input class="form-control" name="mailing_address" type="text"  />
 				  </div>
 				</div>
 			       <div class="form-group">
@@ -119,61 +126,77 @@ $template = new Template();
 				  </div>
 				</div>
 				
-			</form>
-			</div>
+			    </div>
+			
+		    </div>
+		
+		    	
+		    <div class="row u_row" >
+                          <div class="col-lg-6 u_row">
 		    
-			</div>
-					
-					<div class="row u_row" >
-                     <div class="col-lg-6">      
-                    <form action="">
-						<fieldset>
-							<legend>Personal Profile:</legend>
-							<h4>skills</h4>:<textarea rows="3" cols="60"></textarea>
-									<h4>Hobbies & Interests</h4>:<textarea rows="3" cols="60"></textarea>
-						</fieldset>
+			
+				<legend>Personal Profile:</legend>
+				
+				<div class="form-group">
+				  <label class="col-sm-2 control-label" >Skills</label>
+				  <div class="col-sm-6">
+				    <textarea name="skills" rows="3" cols="60" class="form-control" ></textarea>
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="col-sm-2 control-label" >Hobbies & Interests</label>
+				  <div class="col-sm-6">
+				    <textarea name="hobbies" rows="3" cols="60" class="form-control" ></textarea>
+				  </div>
+				</div>
+				
+				
 
-					</form>
-                           
-                   <input type="submit" value="Submit">
-                      <!-- content -->
                       
+			    </div>
+			  <div class="col-lg-6 u_row">
+		    
+			
+				<legend>Sensitive Details:</legend>
+				
+				<div class="form-group">
+				  <label class="col-sm-2 control-label" >Password:</label>
+				  <div class="col-sm-6">
+				    <input class="form-control" name="password" type="password"  />
+				  </div>
 				</div>
+				<div class="form-group">
+				  <label class="col-sm-2 control-label" >Repeat Password:</label>
+				  <div class="col-sm-6">
+				    <input class="form-control" name="repeatedPassword" type="password"  />
+				  </div>
 				</div>
-				<div class="content">
-                      <div class="u_footer">
-                        <div class="footer_content">
-                        <div class="u_social">
-                            <ul class=" nav u_footer_nav">
-                                <li><a href="www.facebook.com/uict" > <img src="../img/fb-icon.jpg" alt="facebook logo" width="20" height="20" /> Facebook </a></li>
-                                 <li><a href="www.twitter.com/uict" ><img src="../img/twitter-icon.jpg" alt="twitter logo" width="20" height="20" /> Twitter </a></li>
-                                  <li><a href="www.google+.com/uict" ><img src="../img/google.jpg" alt="google+ logo"  width="20" height="20"/> Google+ </a></li>
-                            </ul>
-                        </div>
-                        <div class="container">
-                        <div class="u_links">
-                            <ul class="nav u_footer_nav">
-                                <li><a href="#about" >About</a></li>
-                                <li><a href="#terms" >Terms</a></li>
-                                <li><a href="#privacy">Privacy</a></li>
-                            </ul>
-                        </div>
-                        <div class="u_links">
-                            <ul class="nav u_footer_nav">
-                                <li><a href="#events" >Events</a></li>
-                                <li><a href="#projects" >Project</a></li>
-                                <li><a href="#contacts" >Contacts</a></li>
-                            </ul>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="container">
-                        <div class="nav pull-right">
-                            <p>&copy;2014 UICT Community</p>
-                        </div>
-                        </div>
-                        
-                      </div>
+				<div class="form-group">
+				    <div class="col-sm-3">
+				     <input type="submit" value="Submit" class="u_button form-control u_row" />
+				    </div>
+				</div>
+				
+
+                      
+			    </div>
+			  
+			</div>
+		      </form>
+		     </div>
+		     <!--container -->
+		    
+		    
+		    <div class="content">
+                      <?php
+		      try{
+			$template->render('footer.php');
+		      }
+		      catch(Exception $e){
+			echo 'Message: '. $e->getMessage();
+		      }
+		    
+		    ?>
                     </div>
             </div>
         </body>
