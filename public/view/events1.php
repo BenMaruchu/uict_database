@@ -29,9 +29,9 @@
             <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
                
                      <ul class="nav navbar-nav navbar-right">
-                            <li class="active" ><a href="#home">Home</a></li>
+                            <li class="list" ><a href="index.php">Home</a></li>
                             <li class="list"><a href="#projects">Projects</a></li>
-                            <li class="list"><a href="#events">Events</a></li>
+                            <li class="active"><a href="events1.php">Events</a></li>
                             <li class="list"><a href="#about">About</a></li>
                             <li class="list"><a href="login.php">Sign In</a></li>
                             <li ><a><i  title="click to search" data-toggle="dropdown"
