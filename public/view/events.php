@@ -3,6 +3,13 @@
      require_once('../../includes/services/Template.php');
      require_once('../../includes/model/event.php');
      $events = $event->get_all();
+	
+      include('../../includes/services/CurrentPage.php');
+ 
+ CurrentPage::$currentPage = "events";
+ 
+
+$template = new Template();
      /*
     try{
        $load->model('event.php');

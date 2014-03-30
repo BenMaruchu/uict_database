@@ -1,6 +1,14 @@
 <?php
 
  include('../../includes/services/Template.php');
+ 
+
+ include('../../includes/services/CurrentPage.php');
+ 
+ CurrentPage::$currentPage = "about";
+ 
+
+$template = new Template();
 
 // variable to detect the index page
 
