@@ -14,7 +14,7 @@ include_once('../../includes/services/CurrentPage.php');
                
                      <ul class="nav navbar-nav navbar-right">
                             <li class= "<?php echo CurrentPage::$currentPage == "home"?'active':'list'; ?>" ><a href="index.php">Home</a></li>
-                            <li class= "<?php echo CurrentPage::$currentPage == "projects"?'active':'list'; ?>"><a href="projects.php">Projects</a></li>
+                            <li class= "<?php echo CurrentPage::$currentPage == "projects"?'active':'list'; ?>"><a href="../includes/controller/ProjectController.php" >Projects</a></li>
                             <li class= "<?php echo CurrentPage::$currentPage == "events"?'active':'list'; ?>"><a href="events.php">Events</a></li>
                             <li class= "<?php echo CurrentPage::$currentPage == "about"?'active':'list'; ?>"><a href="about.php">About</a></li>
                             <li class= "<?php echo CurrentPage::$currentPage == "signin"?'active':'list'; ?>"><a href="login.php">Sign In</a></li>

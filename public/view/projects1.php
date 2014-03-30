@@ -1,7 +1,7 @@
 <?php
     require_once('../../includes/services/loader.php');
     try{
-       $load->model('project.php');
+       $load->model();
        $load->template('Template.php');
        $community_project = $project->get_projects();
     }catch(Exception $e){
