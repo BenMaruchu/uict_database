@@ -28,7 +28,7 @@
    <section id="login_section">
      <div class="login_header">   <!--the small uict logo was here before, it is replaced with login message now!-->
 	 
-	      <h3>Sign in to UICT Community</h3>
+	      <h3>Sign in</h3>
 	 </div>    
      <div class="message">
         <?php

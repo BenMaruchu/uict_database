@@ -30,8 +30,7 @@ $template = new Template();
             <div id="page">
                     <div id="header">
 		    <?php
-		      try{
-			$template->render('header.php');
+		      try{ $template->render('header.php');
 		      }
 		      catch(Exception $e){
 			echo 'Message: '. $e->getMessage();
