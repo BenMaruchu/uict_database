@@ -3,9 +3,9 @@
      * Loader Object for loading files
      */
     class Loader{
-         private $model_path = '../model/';
-         private $view_path = '../../public/view/';
-         private $template_path = '../../public/templates/';
+         private $model_path = '../../includes/model/';
+         private $view_path = '';
+         private $service_path = '../../includes/services/';
 
          public function model($file=""){
          	$dir = $this->model_path.$file;
@@ -16,8 +16,8 @@
             }
          }
 
-         public function template($file=""){
-         	$dir = $this->template_path.$file;
+         public function service($file=""){
+         	$dir = $this->service_path.$file;
             if(file_exists($dir)){
                 require($dir);
             }else{
@@ -25,7 +25,7 @@
             }
          }
 
-         public function view($file=""){
+         public function view($file="",$data=""){
          	$dir = $this->view_path.$file;
             if(file_exists($dir)){
                 require($dir);
@@ -34,13 +34,7 @@
             }
          }
 
-         public function service($file=""){
-            if(file_exists($file)){
-                require($file);
-            }else{
-            	throw new Exception('File '.$file.' does not exist in this directory');
-            }
-         }
+         
     }
 
     $load = new Loader();

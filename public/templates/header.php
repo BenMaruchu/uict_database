@@ -14,8 +14,8 @@ include_once('../../includes/services/CurrentPage.php');
                
                      <ul class="nav navbar-nav navbar-right">
                             <li class= "active" ><a href="index.php">Home</a></li>
-                            <li class="list"><a href="projects1.php">Projects</a></li>
-                            <li class="list"><a href="events1.php">Events</a></li>
+                            <li class="list"><a href="projects.php">Projects</a></li>
+                            <li class="list"><a href="events.php">Events</a></li>
                             <li class="list"><a href="about.php">About</a></li>
                             <li class="list"><a href="login.php">Sign In</a></li>
                             <li ><a><i  title="click to search" data-toggle="dropdown"

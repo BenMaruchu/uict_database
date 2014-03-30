@@ -10,16 +10,16 @@
                         <div class="container">
                         <div class="u_links">
                             <ul class="nav u_footer_nav">
-                                <li><a href="#about" >About</a></li>
-                                <li><a href="#terms" >Terms</a></li>
-                                <li><a href="#privacy">Privacy</a></li>
+                                <li><a href="about.php" >About</a></li>
+                                <li><a href="terms.php" >Terms</a></li>
+                                <li><a href="privacy.php">Privacy</a></li>
                             </ul>
                         </div>
                         <div class="u_links">
                             <ul class="nav u_footer_nav">
-                                <li><a href="#events" >Events</a></li>
-                                <li><a href="#projects" >Project</a></li>
-                                <li><a href="#contacts" >Contacts</a></li>
+                                <li><a href="events.php" >Events</a></li>
+                                <li><a href="projects.php" >Projects</a></li>
+                                <li><a href="contacts.php" >Contacts</a></li>
                             </ul>
                         </div>
                         </div>

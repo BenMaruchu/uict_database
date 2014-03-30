@@ -25,12 +25,25 @@
           }
        }
 
-       public function get_projects(){
-          $sql = "SELECT * FROM projects ORDER BY id DESC";
+       public function get_all(){
+          $sql = "SELECT projects.id,projects.title,projects.description,users.first_name,users.last_name,projects.begin_date FROM ";
+          $sql .= "projects JOIN users ON projects.initiator_id = users.id";
+          $sql .= " ORDER BY projects.id DESC";
           global $db;
           if($result = $db->db_query($sql)){
              $projects = $db->db_fetch_array($result);
              return $projects;
+          }
+       }
+
+       public function get_project($id=""){
+          if(!empty($id)){
+            $sql = "SELECT * FROM projects WHERE id=".$id;
+            global $db;
+            if($result = $db->db_query($sql)){
+               $project = $db->db_fetch_array($result);
+               return $project;
+            }
           }
        }
 

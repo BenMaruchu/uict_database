@@ -15,12 +15,12 @@
 <body>
 
     <header class="navbar navbar-static-top bs-docs-nav u_header" id="top" role="banner">
-         <?php
-                 try{
-                     $template->render('header.php');
-                 }catch(Exception $e){
-                     echo "Message: ". $e->getMessage();
-                 }
+          <?php
+             try{
+                 $template->render('header.php');
+             }catch(Exception $e){
+                 echo "Message: ". $e->getMessage();
+             }
           ?>
     </header>
 
@@ -28,7 +28,7 @@
    <section id="login_section">
      <div class="login_header">   <!--the small uict logo was here before, it is replaced with login message now!-->
 	 
-	      <h3>Sign in to UICT Community</h3>
+	      <h3>Reset Password</h3>
 	 </div>    
      <div class="message">
         <?php
@@ -39,13 +39,11 @@
      </div>
 	 <div class="ui_form">
      <form name="login" action="../../includes/controller/process_login.php" method="post">
-       <label for="reg_number"></label>
-       <input type="text" name="reg_number" id="reg_number" required placeholder="Registration number" class="form-control">
-       <label for="password"></label>
-       <input type="password" name="password" id="password" required placeholder="Password" class="form-control">
-       <label for="login"></label>
-       <input type="submit" value="Login" id="login" class="btn btn-info">
-       <span><a href="reset-password.php">Forgot password?</a></span>
+       <label for="email">Enter your email to reset password </label>
+       <input type="email" name="email" id="email" required placeholder="Email" class="form-control">
+       <label for="reset-password"></label>
+       <input type="submit" value="Reset Password" id="reset-password" class="btn btn-info">
+       <span><a href="login.php"><< Back</a></span>
      </form>
 	 </div>
    </section>
@@ -53,16 +51,15 @@
    <script src="../js/bootstrap.min.js"></script>
    
       <div class="content">
-              <?php
-                  try{
-                     $template->render('footer.php');
-                  }catch(Exception $e){
-                     echo "Message: ".$e->getMessage();
-                  }
-              ?>
-                
-      </div><!-- end of content -->
-  </div>
+            <?php
+                try{
+                   $template->render('footer.php');
+                }catch(Exception $e){
+                   echo "Message: ".$e->getMessage();
+                }
+            ?>
+            </div>
+      </div>
   
 </body>
 </html>
