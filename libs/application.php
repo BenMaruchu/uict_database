@@ -27,7 +27,7 @@ class Application
         $this->splitUrl();
 
         // check for controller: does such a controller exist ?
-        echo 'Controller is '.$this->url_controller;
+        
         
         if (file_exists('./includes/controller/' . $this->url_controller . '.php')) {
 

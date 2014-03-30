@@ -25,13 +25,46 @@
           }
        }
 
-       public function get_projects(){
-          $sql = "SELECT * FROM projects ORDER BY id DESC";
+       public function get_all(){
+          $sql = "SELECT projects.id,projects.title,projects.description,users.first_name,users.last_name,projects.begin_date FROM ";
+          $sql .= "projects JOIN users ON projects.initiator_id = users.id";
+          $sql .= " ORDER BY projects.id DESC";
           global $db;
           if($result = $db->db_query($sql)){
              $projects = $db->db_fetch_array($result);
              return $projects;
           }
+       }
+
+       public function get_project($id=""){
+          if(!empty($id)){
+            $sql = "SELECT projects.id,projects.title,projects.description,projects.begin_date,projects.initiator_id,users.first_name,users.last_name";
+            $sql .= " FROM projects JOIN users ON projects.initiator_id = users.id WHERE projects.id = ".$id;
+            global $db;
+            if($result = $db->db_query($sql)){
+               $project = $db->db_first_row($result);
+               return $project;
+            }
+          }
+       }
+
+       public function get_by_date($begin_date="",$end_date=""){
+           if(!empty($begin_date) && !empty($end_date)){
+               $sql = "SELECT projects.id,projects.title,projects.description,users.first_name,users.last_name,projects.begin_date FROM ";
+               $sql .= "projects JOIN users ON projects.initiator_id = users.id";
+               $sql .= " ORDER BY projects.id DESC";
+           }else if(!empty($begin_date) && empty($end_date)){
+               $sql = "";
+           }else if(empty($begin_date) && !empty($end_date)){
+               $sql = "";
+           }else{
+              return false;
+           }
+
+           if($result = $db->db_query($sql)){
+              $projects = $db->fetch_array($result);
+              return $projects;
+           }
        }
 
    }
