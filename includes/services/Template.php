@@ -1,6 +1,6 @@
 <?php
 class Template{
-   protected $template_dir = '../../public/templates/';
+   protected $template_dir = './public/templates/';
 
    public function __construct($template_dir = null){
         if($template_dir !== null){

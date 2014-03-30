@@ -4,8 +4,9 @@
      */
     class Loader{
          protected $model_path = '../model/';
-         private $view_path = '';
+         private $view_path = './public/view/';
          private $template_path = '../../public/templates/';
+	 private $service_path='./includes/services/';
 
          public function model($file=""){
          	$dir = $this->model_path.$file;
@@ -35,10 +36,10 @@
          }
 
          public function service($file=""){
-            if(file_exists($file)){
-                require($file);
+            if(file_exists($this->service_path.$file)){
+                require($this->service_path.$file);
             }else{
-            	throw new Exception('File '.$file.' does not exist in this directory');
+            	throw new Exception('File "'.$file.'"does not exist in this directory"');
             }
          }
     }
