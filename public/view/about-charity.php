@@ -1,12 +1,6 @@
 <?php
 
  include('../../includes/services/Template.php');
- include('../../includes/services/CurrentPage.php');
- 
- CurrentPage::$currentPage = "home";
- 
-
-$template = new Template();
 
 // variable to detect the index page
 
@@ -40,21 +34,7 @@ $template = new Template();
 		    ?>
 		    </div>
                 
-                      <div id="banner">
-                            <div class="container">
-                            <div class="message pull-left">
-                                <span>Exploring Technologies </span>
-                            </div>
-                            </div>
-                            <div class="container">
-                            <div class="content" >
-                            <div class="signup_button">
-                                <a href="registration.php" class="u_button" >Sign Up, It is fast</a>
-                            </div>
-                            </div>
-                            </div>
-                        </div>
-                        <!-- banner -->
+                      
                       <!-- header -->
                       </div>
                 <!-- container -->
@@ -62,21 +42,14 @@ $template = new Template();
                       <div class="content">
                         <div class="description" >
                             <div class="u_heading">
-                            <h2>Become Innovative While Studying</h2>
+                            <h2>Charity</h2>
                             </div>
                             <p>
-                              University and college students have vital
-                              role to play for driving innovation through intellectual curiosity and
-                              discovery leading to creative innovative ideas in the context of
-                              fast growing economy and rapid changing technology, Recognizing students
-                              unexplored potential, UICT Community encourages project based learning to
-                              seek ICT solutions to local problems starting with the scope of the
-                              University Of Dar es Salaam.  
+                              We recognize social and economic challenges in the society around us as we stretch out to 
+                              help the poor and the needy. As a community we visit orphanages and other vulnerable areas such
+                               as juvenile places as well as different hospitals doing our best possible to reach various 
+                               angles of our society to help out the situation. 
                             </p>
-                            
-                            <div id="u_link">
-                                <a href="about.php">Read More</a>
-                            </div>
                             
                            
                          </div>
@@ -100,7 +73,7 @@ $template = new Template();
                             </div>
                               <img  src="../img/sports.jpg" alt="sports image"  width="225" height="150"/>
                               <p>Have fun and grow your network outside class by joining in our sports bonanza </p>
-                              <a href="#more_on_uict">Read More</a>
+                              <a href="about-sports.php">Read More</a>
                             </div>
                         <div class="col-md-3">
                               <div class="u_heading">
@@ -108,7 +81,7 @@ $template = new Template();
                             </div>
                               <img  src="../img/charity.png" alt="charity image"  width="225" height="150"/>
                               <p>Become part of others solution by joining hands with us to serve the outside society </p>
-                              <a href="#more_on_uict">Read More</a>
+                              <a href="about-charity.php">Read More</a>
                             </div>
                         
                          <div class="col-md-3">
@@ -117,7 +90,7 @@ $template = new Template();
                             </div>
                               <img  src="../img/sports.jpg" alt="sports image"  width="225" height="150"/>
                               <p>Have fun and grow your network outside class by joining in our sports bonanza </p>
-                              <a href="#more_on_uict">Read More</a>
+                              <a href="about-sports.php">Read More</a>
                             </div>
                       </div>
                         <!-- u_row -->

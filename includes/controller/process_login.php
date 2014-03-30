@@ -1,6 +1,6 @@
 <?php
    //require_once('../helper/initialize.php');
-   require_once('../helper/functions.php');
+   require_once('../services/functions.php');
    require_once('../model/user.php');
    require_once('../model/database.php');
    require_once('../model/session.php');

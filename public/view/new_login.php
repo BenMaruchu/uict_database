@@ -58,7 +58,7 @@
 <br />
 <p>
 <br />
-Please Login
+Sign in
 </p>
  </div>
  
