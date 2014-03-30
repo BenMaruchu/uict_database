@@ -26,15 +26,7 @@ $template = new Template();
         <body>
             <div id="page">
 		    <div id="header">
-		    <?php
-		      try{
-			$template->render('header.php');
-		      }
-		      catch(Exception $e){
-			echo 'Message: '. $e->getMessage();
-		      }
-		    
-		    ?>
+		    <?php $template->render('header.php'); ?>
 		    </div>
 			<div class="container">
 			<div class="row ">

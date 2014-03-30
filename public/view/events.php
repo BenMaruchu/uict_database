@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
     require_once('./includes/model/event.php');
     require_once('./includes/services/Template.php');
     include_once('./includes/services/CurrentPage.php');
@@ -7,6 +8,28 @@
     $event = new Event();
     $events = $event->get_events();
     
+=======
+     require_once('../../includes/services/loader.php');
+     require_once('../../includes/services/Template.php');
+     require_once('../../includes/model/event.php');
+     $events = $event->get_all();
+	
+      include('../../includes/services/CurrentPage.php');
+ 
+ CurrentPage::$currentPage = "events";
+ 
+
+$template = new Template();
+     /*
+    try{
+       $load->model('event.php');
+       $load->template('Template.php');
+       $events = $event->get_events();
+    }catch(Exception $e){
+       echo "Message: ".$e->getMessage();
+    }   
+    */
+>>>>>>> 2334535cc0571955be2c95576825b8679af3d753
 ?>
 <!DOCTYPE html>
     <html lang='en'>

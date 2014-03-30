@@ -24,6 +24,7 @@
 			  margin-top:120px;
 			  margin-left: auto;
 			  margin-right: auto;
+			  margin-bottom:200px;
 			
 	    	background: #DDD;  
 	    	box-shadow: 0px 10px 10px -6px #000;
@@ -48,6 +49,7 @@
     	     border-radius: 8px 8px 0px 0px;
 			     color:#FFFFFF;
 			     margin-top:0px;
+				 margin-bottom:25px;
        }
 
        .login_header img{
@@ -117,16 +119,19 @@
   
   #reg_number, #password, #email{
        width: 100%;
-       
+       margin-top:20px;
+	   margin-bottom:25px;
+	   height: 40px;
   }
 
 
 
   .login_header h3{
-        margin-left: 50px;
+        margin-left: 150px;
         margin-right: 50px;
         margin-top: 20px;
-        font-size: 20px;
+        font-size: 30px;
+		padding-top:10px;
   }
 
   #login{

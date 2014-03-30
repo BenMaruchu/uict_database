@@ -106,6 +106,13 @@ body{
     position:absolute;
     right:0px;
 }
+.search{
+float:left;
+list-style:none;
+
+}
+
+}
 .description{
     border:1px thin #E0E0E0;
     background-color:#E8E8E8;

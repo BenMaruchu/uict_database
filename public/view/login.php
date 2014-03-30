@@ -1,6 +1,14 @@
 <?php //require_once('../includes/helper/initialize.php'); 
         require_once('../../includes/services/functions.php');
         require_once('../../includes/services/Template.php');
+		 
+		 
+      include('../../includes/services/CurrentPage.php');
+ 
+ CurrentPage::$currentPage = "signin";
+ 
+
+$template = new Template();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +36,7 @@
    <section id="login_section">
      <div class="login_header">   <!--the small uict logo was here before, it is replaced with login message now!-->
 	 
-	      <h3>Sign in to UICT Community</h3>
+	      <h3>Sign in</h3>
 	 </div>    
      <div class="message">
         <?php
