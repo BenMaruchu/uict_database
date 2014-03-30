@@ -3,9 +3,9 @@
      * Loader Object for loading files
      */
     class Loader{
-         protected $model_path = '../model/';
+         protected $model_path = './includes/model/';
          private $view_path = './public/view/';
-         private $template_path = '../../public/templates/';
+         private $template_path = './public/templates/';
 	 private $service_path='./includes/services/';
 
          public function model($file=""){

@@ -1,9 +1,13 @@
 <?php
-    require_once('../../includes/services/loader.php');
+    require_once('./includes/services/Loader.php');
+    $loader = new Loader();
     try{
-       $load->model();
-       $load->template('Template.php');
-       $community_project = $project->get_projects();
+       
+       $loader->service('Template.php');
+       $community_project = $data;
+       
+       $template = new Template();
+       
     }catch(Exception $e){
        echo "Message: ".$e->getMessage();
     }
@@ -15,14 +19,14 @@
         <head>
             <meta charset="utf-8" />
             <title>UICT COMMUNITY</title>
-            <link href="../css/bootstrap.min.css" type="text/css" rel="stylesheet"> 
-            <link href="../css/bootstrap-theme.css" type="text/css" rel="stylesheet"> 
+            <link href="./public/css/bootstrap.min.css" type="text/css" rel="stylesheet"> 
+            <link href="./public/css/bootstrap-theme.css" type="text/css" rel="stylesheet"> 
 
-            <link rel="stylesheet" type="text/css" href="../css/style.css" />
+            <link rel="stylesheet" type="text/css" href="./public/css/style.css" />
             <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine" />
             <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Gafata" />
-            <link rel="stylesheet" type="text/css" href="../css/main.css"/>
-            <link rel="stylesheet" type="text/css" href="../css/events.css"/>
+            <link rel="stylesheet" type="text/css" href="./public/css/main.css"/>
+            <link rel="stylesheet" type="text/css" href="./public/css/events.css"/>
             
         </head>
         <body>

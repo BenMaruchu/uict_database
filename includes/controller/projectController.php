@@ -1,5 +1,5 @@
 <?php
- require ('./includes/model/Project.php');
+ require ('./includes/model/project.php');
  require ('./includes/services/Loader.php');
 
 class ProjectController extends Controller {
@@ -17,7 +17,7 @@ class ProjectController extends Controller {
         echo 'Entered all projects';
         
         $projects = new Project();
-        $projects = $projects -> get_projects();
+        $projects = $projects -> get_all();
         
         try{
           $this->loader->view('projects.php',$projects);
