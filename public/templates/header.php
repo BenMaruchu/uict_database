@@ -13,11 +13,11 @@ include_once('../../includes/services/CurrentPage.php');
             <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
                
                      <ul class="nav navbar-nav navbar-right">
-                            <li class= "active" ><a href="index.php">Home</a></li>
-                            <li class="list"><a href="projects.php">Projects</a></li>
-                            <li class="list"><a href="events.php">Events</a></li>
-                            <li class="list"><a href="about.php">About</a></li>
-                            <li class="list"><a href="login.php">Sign In</a></li>
+                            <li class= "<?php echo CurrentPage::$currentPage == "home"?'active':'list'; ?>" ><a href="index.php">Home</a></li>
+                            <li class= "<?php echo CurrentPage::$currentPage == "projects"?'active':'list'; ?>"><a href="../includes/controller/ProjectController.php" >Projects</a></li>
+                            <li class= "<?php echo CurrentPage::$currentPage == "events"?'active':'list'; ?>"><a href="events.php">Events</a></li>
+                            <li class= "<?php echo CurrentPage::$currentPage == "about"?'active':'list'; ?>"><a href="about.php">About</a></li>
+                            <li class= "<?php echo CurrentPage::$currentPage == "signin"?'active':'list'; ?>"><a href="login.php">Sign In</a></li>
                             <li ><a><i  title="click to search" data-toggle="dropdown"
 				class="dropdown-toggle glyphicon glyphicon-search"></i>
                                 </a>
