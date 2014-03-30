@@ -3,6 +3,7 @@
      require_once('../../includes/services/Template.php');
      require_once('../../includes/model/event.php');
      $events = $event->get_all();
+
      /*
     try{
        $load->model('event.php');
@@ -81,13 +82,14 @@
                                foreach($events as $event){
                                    echo '<div class="event">';
                                       echo '<div class="event-wrapper">';
-                                      echo '<span class="event_tag"></span><span class="event_title">'.$event['title'].'</span>';
-                                      //echo '<span class="event_title">'.$event['category'].'</span>';
+                                      echo '<span class="event_tag"></span><span class="event_title"><a href="';
+                                      echo 'community-event.php?id='.urlencode($event['id']).'">'.$event['title'].'</a></span>';
                                       echo '<span class="event_tag">Description </span><span class="event_description">'.$event['description'].'</span>';
-                                      echo '<span class="event_more"><a href="../../includes/controller/get_event.php?id=';
+                                      echo '<span class="event_more"><a href="community-event.php?id=';
                                       echo urlencode($event['id']).'">Read more</a></span>';
                                       echo '<span class="event_tag">Date & Time </span><span class="event_time">'.$event['date'].'</span>';
-                                      echo '<span class="event_tag">Posted By </span><span class="event_publisher">Faith Assenga - Communication Director</span>';
+                                      echo '<span class="event_tag">Posted By </span><span class="event_publisher">'.$event['first_name'];
+                                      echo ' '.$event['last_name'].'</span>';
                                       echo '</div>';
                                    echo '</div>';
                                 }
