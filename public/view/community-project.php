@@ -1,15 +1,15 @@
 <?php
-    require_once('../../includes/model/event.php');
+    require_once('../../includes/model/project.php');
     require_once('../../includes/services/functions.php');
     require_once('../../includes/services/Template.php');
     require_once('../../includes/model/comment.php');
 
     if(urldecode($_GET['id'])){
-    	$event_id = urldecode($_GET['id']);
-        $com_event = $event->get_event($event_id);
+    	$project_id = urldecode($_GET['id']);
+        $com_project = $project->get_project($project_id);
         try{
-		    $comment->source_id = $com_event['id'];
-		    $comment->category = "event";
+		    $comment->source_id = $com_project['id'];
+		    $comment->category = "project";
 		    $comments = $comment->get_comments();
 		}catch(Exception $e){
 		    echo "Messsage: ".$e->getMessage();
@@ -48,7 +48,7 @@
                     <div class="row">
                        <div class="container">
                          <div class="col-md-12 header_events">
-                           <h3><a href="events.php">Events</a> >> <?php echo $com_event['title']; ?></h3>
+                           <h3><a href="events.php">Projects</a> >> <?php echo $com_project['title']; ?></h3>
                          </div><!-- end col-md-12 -->
                        </div><!-- end container -->
                     </div><!-- end row page header -->
@@ -63,16 +63,15 @@
                         
                         <div class="row">
                           <?php
-                             if(isset($com_event) && is_array($com_event)){
+                             if(isset($com_project) && is_array($com_project)){
 
                                    echo '<div class="event">';
                                       echo '<div class="event-wrapper">';
-                                      echo '<span class="event_tag"></span><span class="event_title">'.$com_event['title'].'</span>';
-                                      //echo '<span class="event_title">'.$event['category'].'</span>';
-                                      echo '<span class="event_tag">Description </span><span class="event_description">'.$com_event['description'].'</span>';
-                                      echo '<span class="event_tag">Date & Time </span><span class="event_time">'.$com_event['date'].'</span>';
+                                      echo '<span class="event_tag"></span><span class="event_title">'.$com_project['title'].'</span>';
+                                      echo '<span class="event_tag">Description </span><span class="event_description">'.$com_project['description'].'</span>';
+                                      echo '<span class="event_tag">Begin Date </span><span class="event_time">'.$com_project['begin_date'].'</span>';
                                       echo '<span class="event_tag">Posted By </span><span class="event_publisher">';
-                                      echo $com_event['first_name'].' '.$com_event['last_name'].'</span>';
+                                      echo $com_project['first_name'].' '.$com_project['last_name'].'</span>';
                                       echo '</div>';
                                    echo '</div>';
                                 

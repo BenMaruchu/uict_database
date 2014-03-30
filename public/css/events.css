@@ -32,6 +32,10 @@
         font: bold 18px candara, arial, calibri, sans-serif,serif,"Times New Roman";
     }
 
+    .event .event_title a{
+        color: #444;
+    }
+
     .event .event_title a:hover{
         text-decoration: none;
     }

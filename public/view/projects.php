@@ -83,8 +83,8 @@
                                foreach($community_project as $project){
                                    echo '<div class="event">';
                                       echo '<div class="event-wrapper">';
-                                      echo '<span class="event_tag"></span><span class="event_title">'.$project['title'].'</span>';
-                                      //echo '<span class="event_title">'.$event['category'].'</span>';
+                                      echo '<span class="event_tag"></span><span class="event_title"><a href="';
+                                      echo 'community-project.php?id='.urlencode($project['id']).'">'.$project['title'].'</a></span>';
                                       echo '<span class="event_tag">Description </span><span class="event_description">'.$project['description'].'</span>';
                                       echo '<span class="event_more"><a href="#">Read more</a></span>';
                                       echo '<span class="event_tag">Begin Date </span><span class="event_time">'.$project['begin_date'].'</span>';
