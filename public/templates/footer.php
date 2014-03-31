@@ -2,9 +2,23 @@
                         <div class="footer_content">
                         <div class="u_social">
                             <ul class=" nav u_footer_nav">
-                                <li><a href="www.facebook.com/uict" > <img src="../img/fb-icon.jpg" alt="facebook logo" width="20" height="20" /> Facebook </a></li>
-                                 <li><a href="www.twitter.com/uict" ><img src="../img/twitter-icon.jpg" alt="twitter logo" width="20" height="20" /> Twitter </a></li>
-                                  <li><a href="www.google+.com/uict" ><img src="../img/google.jpg" alt="google+ logo"  width="20" height="20"/> Google+ </a></li>
+                                <li>
+				<?php echo (CurrentPage::$currentPage == "home")?'<a href="www.facebook.com/uict" > <img src="./public/img/fb-icon.jpg" alt="facebook logo" width="20" height="20" /> Facebook </a>':
+				'<a href="www.facebook.com/uict" > <img src="../public/img/fb-icon.jpg" alt="facebook logo" width="20" height="20" /> Facebook </a>';
+				?>
+				</li>
+                                <li>
+				<?php
+				  echo (CurrentPage::$currentPage == "home")?'<a href="www.twitter.com/uict" ><img src="./public/img/twitter-icon.jpg" alt="twitter logo" width="20" height="20" /> Twitter </a>':
+				        '<a href="www.twitter.com/uict" ><img src="../public/img/twitter-icon.jpg" alt="twitter logo" width="20" height="20" /> Twitter </a>';
+			        ?>
+				</li>
+                                <li>
+			        <?php
+				   echo (CurrentPage::$currentPage == "home")?'<a href="www.google+.com/uict" ><img src="./public/img/google.jpg" alt="google+ logo"  width="20" height="20"/> Google+ </a>':
+			            '<a href="www.google+.com/uict" ><img src="../public/img/google.jpg" alt="google+ logo"  width="20" height="20"/> Google+ </a>';
+				 ?>
+				</li>
                             </ul>
                         </div>
                         <div class="container">

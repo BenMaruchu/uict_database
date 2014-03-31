@@ -4,9 +4,12 @@
     try{
        
        $loader->service('Template.php');
+       $loader->service('CurrentPage.php');
        $community_project = $data;
        
        $template = new Template();
+       
+       CurrentPage::$currentPage = "projects";
        
     }catch(Exception $e){
        echo "Message: ".$e->getMessage();
@@ -19,14 +22,19 @@
         <head>
             <meta charset="utf-8" />
             <title>UICT COMMUNITY</title>
-            <link href="./public/css/bootstrap.min.css" type="text/css" rel="stylesheet"> 
-            <link href="./public/css/bootstrap-theme.css" type="text/css" rel="stylesheet"> 
-
-            <link rel="stylesheet" type="text/css" href="./public/css/style.css" />
+            <?php
+	    
+	    $cssFiles = array("bootstrap.min.css","bootstrap-theme.css","style.css","main.css","events.css");
+	    
+	    foreach($cssFiles as $file){
+	    echo '<link rel="stylesheet" type="text/css" href="../public/css/'.$file.'" />';
+	    }
+	    
+	    ?>
+             
             <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine" />
             <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Gafata" />
-            <link rel="stylesheet" type="text/css" href="./public/css/main.css"/>
-            <link rel="stylesheet" type="text/css" href="./public/css/events.css"/>
+     
             
         </head>
         <body>

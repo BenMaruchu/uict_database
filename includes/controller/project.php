@@ -14,7 +14,7 @@ class ProjectController extends Controller {
         
     }
     public function allProjects(){
-        echo 'Entered all projects';
+        
         
         $projects = new Project();
         $projects = $projects -> get_all();

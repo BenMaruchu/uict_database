@@ -34,7 +34,10 @@ class Application
             // if so, then load this file and create this controller
             // example: if controller would be "car", then this line would translate into: $this->car = new car();
             require './includes/controller/' . $this->url_controller . '.php';
-            $this->url_controller = new $this->url_controller();
+            
+            $constructForController = $this->url_controller.'Controller';
+            
+            $this->url_controller = new $constructForController();
 
             // check for method: does such a method exist in the controller ?
             if (method_exists($this->url_controller, $this->url_action)) {
@@ -59,8 +62,8 @@ class Application
             }
         } else {
             // invalid URL, so simply show home/index
-            require './includes/controller/Home.php';
-            $home = new Home();
+            require './includes/controller/home.php';
+            $home = new HomeController();
             $home->index();
         }
     }
@@ -79,8 +82,9 @@ class Application
 
             // Put URL parts into according properties
             // By the way, the syntax here is just a short form of if/else, called "Ternary Operators"
-            // @see http://davidwalsh.name/php-shorthand-if-else-ternary-operators
+            // 
             $this->url_controller = (isset($url[1]) ? $url[1] : null);
+            
             $this->url_action = (isset($url[2]) ? $url[2] : null);
             $this->url_parameter_1 = (isset($url[3]) ? $url[3] : null);
             $this->url_parameter_2 = (isset($url[4]) ? $url[4] : null);

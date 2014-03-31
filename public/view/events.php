@@ -1,49 +1,39 @@
 <?php
-<<<<<<< HEAD
-    require_once('./includes/model/event.php');
-    require_once('./includes/services/Template.php');
-    include_once('./includes/services/CurrentPage.php');
-    
-    CurrentPage::$currentPage = "events";
-    $event = new Event();
-    $events = $event->get_events();
-    
-=======
-     require_once('../../includes/services/loader.php');
-     require_once('../../includes/services/Template.php');
-     require_once('../../includes/model/event.php');
-     $events = $event->get_all();
-	
-      include('../../includes/services/CurrentPage.php');
- 
- CurrentPage::$currentPage = "events";
- 
-
-$template = new Template();
-     /*
+    require_once('./includes/services/Loader.php');
+    $loader = new Loader();
     try{
-       $load->model('event.php');
-       $load->template('Template.php');
-       $events = $event->get_events();
+       
+       $loader->service('Template.php');
+       $loader->service('CurrentPage.php');
+       
+       
+       $template = new Template();
+       
+       CurrentPage::$currentPage = "events";
+       
     }catch(Exception $e){
        echo "Message: ".$e->getMessage();
-    }   
-    */
->>>>>>> 2334535cc0571955be2c95576825b8679af3d753
+    }
+    
+    
 ?>
 <!DOCTYPE html>
     <html lang='en'>
         <head>
             <meta charset="utf-8" />
             <title>UICT COMMUNITY</title>
-            <link href="../css/bootstrap.min.css" type="text/css" rel="stylesheet"> 
-            <link href="../css/bootstrap-theme.css" type="text/css" rel="stylesheet"> 
-
-            <link rel="stylesheet" type="text/css" href="../css/style.css" />
+            <?php
+	    
+	    $cssFiles = array("bootstrap.min.css","bootstrap-theme.css","style.css","main.css","events.css");
+	    
+	    foreach($cssFiles as $file){
+	    echo '<link rel="stylesheet" type="text/css" href="../public/css/'.$file.'" />';
+	    }
+	    
+	    ?>
             <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine" />
             <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Gafata" />
-            <link rel="stylesheet" type="text/css" href="../css/main.css"/>
-            <link rel="stylesheet" type="text/css" href="../css/events.css"/>
+            
             
         </head>
         <body>

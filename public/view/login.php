@@ -1,14 +1,22 @@
 <?php //require_once('../includes/helper/initialize.php'); 
-        require_once('../../includes/services/functions.php');
-        require_once('../../includes/services/Template.php');
-		 
-		 
-      include('../../includes/services/CurrentPage.php');
- 
- CurrentPage::$currentPage = "signin";
- 
-
-$template = new Template();
+  
+require_once('./includes/services/Loader.php');
+    $loader = new Loader();
+    try{
+       
+       $loader->service('Template.php');
+       $loader->service('CurrentPage.php');
+       $loader->service('functions.php');
+       
+       
+       $template = new Template();
+       
+       CurrentPage::$currentPage = "signin";
+       
+    }catch(Exception $e){
+       echo "Message: ".$e->getMessage();
+    }
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,22 +24,30 @@ $template = new Template();
 <meta charset="UTF-8">
 <title>Login | UICT Community</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="../css/bootstrap.min.css" type="text/css" rel="stylesheet">
-<link href="../css/custom.css" type="text/css" rel="stylesheet">
-<link href="../css/main.css" type="text/css" rel="stylesheet">
+	<?php
+	    
+	    $cssFiles = array("bootstrap.min.css","bootstrap-theme.css","main.css","custom.css");
+	    
+	    foreach($cssFiles as $file){
+	    echo '<link rel="stylesheet" type="text/css" href="../public/css/'.$file.'" />';
+	    }
+	    
+	    ?>
+
 </head>
 <body>
-
-    <header class="navbar navbar-static-top bs-docs-nav u_header" id="top" role="banner">
-         <?php
-                 try{
-                     $template->render('header.php');
-                 }catch(Exception $e){
-                     echo "Message: ". $e->getMessage();
-                 }
-          ?>
-    </header>
-
+	<div id="page">
+                <div id="header">
+		    <?php
+		      try{
+			$template->render('header.php');
+		      }
+		      catch(Exception $e){
+			echo 'Message: '. $e->getMessage();
+		      }
+		    
+		    ?>
+		    </div>
 
    <section id="login_section">
      <div class="login_header">   <!--the small uict logo was here before, it is replaced with login message now!-->
@@ -39,11 +55,7 @@ $template = new Template();
 	      <h3>Sign in</h3>
 	 </div>    
      <div class="message">
-        <?php
-           if($_GET){
-              echo output_message(urldecode($_GET['message']));
-           }
-        ?>
+	
      </div>
 	 <div class="ui_form">
      <form name="login" action="../../includes/controller/process_login.php" method="post">
@@ -61,16 +73,16 @@ $template = new Template();
    <script src="../js/bootstrap.min.js"></script>
    
       <div class="content">
-              <?php
-                  try{
-                     $template->render('footer.php');
-                  }catch(Exception $e){
-                     echo "Message: ".$e->getMessage();
-                  }
-              ?>
-                
+	      <?php
+		  try{
+		     $template->render('footer.php');
+		  }catch(Exception $e){
+		     echo "Message: ".$e->getMessage();
+		  }
+	      ?>
+		
       </div><!-- end of content -->
   </div>
-  
+  </div>
 </body>
 </html>

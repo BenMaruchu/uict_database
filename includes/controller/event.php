@@ -11,9 +11,9 @@ class EventController extends Controller{
     public function allEvents(){
        $event = new Event();
        
-       $events = $event->get_events();
+       $events = $event->get_all();
         try{
-          $this->loader->view('events1.php',$events);
+          $this->loader->view('events.php',$events);
         }catch(Exception $e){
           echo 'Message: '. $e->getMessage();
         }
