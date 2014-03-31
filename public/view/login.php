@@ -58,7 +58,7 @@ require_once('./includes/services/Loader.php');
 	
      </div>
 	 <div class="ui_form">
-     <form name="login" action="../../includes/controller/process_login.php" method="post">
+     <form name="login" action="<?php echo URL; ?>user/index" method="post">
        <label for="reg_number"></label>
        <input type="text" name="reg_number" id="reg_number" required placeholder="Registration number" class="form-control">
        <label for="password"></label>

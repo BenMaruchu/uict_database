@@ -63,7 +63,7 @@ $template = new Template();
                             <div class="container">
                             <div class="content" >
                             <div class="signup_button">
-                                <a href="registration.php" class="u_button" >Sign Up, It is fast</a>
+                                <a href="<?php echo URL; ?>home/registration" class="u_button" >Sign Up, It is fast</a>
                             </div>
                             </div>
                             </div>
@@ -89,7 +89,7 @@ $template = new Template();
                             </p>
                             
                             <div id="u_link">
-                                <a href="about.php">Read More</a>
+                                <a href="<?php echo URL; ?>home/about">Read More</a>
                             </div>
                             
                            
@@ -107,7 +107,7 @@ $template = new Template();
 			                 '<img  src="../public/img/projects.jpg" alt="project image"  width="225" height="150"/>';
 			      ?>
                               <p>Share and develop your skills with us by joining project execution teams </p>
-                              <a href="about-projects.php">Read More</a>
+                              <a href="<?php echo URL; ?>project/about-projects">Read More</a>
                             </div>
                         
                            <div class="col-md-3">
@@ -115,10 +115,10 @@ $template = new Template();
                             <h4>Sport and Socialization</h4>
                             </div>
                               <?php echo (CurrentPage::$currentPage == "home")?'<img  src="./public/img/sports.jpg" alt="sports image"  width="225" height="150"/>':
-			                 '<img  src="../public/img/sports.jpg" alt="sports image"  width="225" height="150"/>';
+			                 '<img  src="../public/img/about-sports.jpg" alt="sports image"  width="225" height="150"/>';
 			       ?>
                               <p>Have fun and grow your network outside class by joining in our sports bonanza </p>
-                              <a href="#more_on_uict">Read More</a>
+                              <a href="<?php echo URL; ?>home/charity">Read More</a>
                             </div>
                         <div class="col-md-3">
                               <div class="u_heading">
@@ -128,7 +128,7 @@ $template = new Template();
 			               '<img  src="../public/img/charity.png" alt="charity image"  width="225" height="150"/>';
                               ?>
                               <p>Become part of others solution by joining hands with us to serve the outside society </p>
-                              <a href="#more_on_uict">Read More</a>
+                              <a href="<?php echo URL; ?>home/about-sports">Read More</a>
                             </div>
                         
                          <div class="col-md-3">

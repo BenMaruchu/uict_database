@@ -67,11 +67,37 @@ require_once('./includes/services/Loader.php');
                             <h2>Commmunity Background</h2>
                             </div>
                             <p>
-                              Formed in 2012/2013 academic year by first year students in the College of Information and Communication Technologies (CoICT) of the University of Dar es salaam, UICT Community is a dedicated group of ICT students aiming at learning and developing skills towards solving different problems in the society by means of ICT. 
-                              As a response to the inherent need for awareness and motivation among Tanzanian university students to explore technological challenges embedded with innovation opportunities, UICT Community serves as a platform of connecting students’ efforts and providing collaborative environment within the University community.
-                              UICT Community comprises of its members as first degree seekers in fields of Computer Engineering and Information Technology, Computer Science, Telecommunications Engineering and Electronics and Communications Engineering. These together form the basis of UICT Community initials as University Information and Communication Technologies Community.
-                              The community engages in various activities such as team projects, trainings and workshops, industrial study tours, technological demonstrations and collaboration with other communities in the university. Also the community participates in extra-curricular activities such as charity, sports and volunteering activities such as environmental conservation and mentoring programs for Tanzanian secondary students.
-                              Learning being the key objective of the community, UICT Community accommodates all CoICT students interested with community initiatives from 2012 academic year onwards.
+                              Formed in 2012/2013 academic year by first year students in the College of
+			      Information and Communication Technologies (CoICT) of the University of Dar
+			      es salaam, UICT Community is a dedicated group of ICT students aiming at
+			      learning and developing skills towards solving different problems in the society
+			      by means of ICT.
+			    </p>
+			    <p>
+                              As a response to the inherent need for awareness and motivation among Tanzanian
+			      university students to explore technological challenges embedded with innovation
+			      opportunities, UICT Community serves as a platform of connecting students’ efforts
+			      and providing collaborative environment within the University community.
+			    </p>
+			    <p>
+                              UICT Community comprises of its members as first degree seekers in fields of
+			      Computer Engineering and Information Technology, Computer Science,
+			      Telecommunications Engineering and Electronics and Communications Engineering.
+			    </p>
+			    <p>
+			      These together form the basis of UICT Community initials as University Information
+			      and Communication Technologies Community.
+			      </p>
+			    <p>
+                              The community engages in various activities such as team projects, trainings and
+			      workshops, industrial study tours, technological demonstrations and collaboration
+			      with other communities in the university.
+			     </p>
+			    <p>
+			      Also the community participates in extra-curricular activities such as charity,
+			      sports and volunteering activities such as environmental conservation and mentoring
+			      programs for Tanzanian secondary students.
+			      Learning being the key objective of the community, UICT Community accommodates all CoICT students interested with community initiatives from 2012 academic year onwards.
  
                             </p>
                             <div class="u_heading">

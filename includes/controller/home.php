@@ -11,6 +11,9 @@ class HomeController extends Controller{
     public function login(){
         require ('./public/view/login.php');
     }
+    public function registration(){
+        require('./public/view/registration.php');
+    }
 }
 
 
