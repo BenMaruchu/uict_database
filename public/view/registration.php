@@ -65,7 +65,7 @@ $template = new Template();
                         <!-- banner -->
                       <!-- header -->
                      <div class="row">
-			<form action="" class="form-horizontal u_row" role="form">
+			<form action="<?php echo URL; ?>home/register" class="form-horizontal u_row" method="post" role="form">
 			<div class="col-lg-6 u_row">
 				
 				    
@@ -95,13 +95,13 @@ $template = new Template();
 				      <label class="col-sm-2 control-label" >Sex:</label>
 				      <div class="radio col-sm-3">
 					<label>
-					<input name="gender" type="radio" class="form-control" value="male" /> Male
+					<input name="gender" type="radio" class="form-control" value="male" selected="selected" /> Male
 					</label>
 				      </div>
 				      
 				      <div class="radio col-sm-3">
 					<label>
-					<input name="gender" type="radio" class="form-control" value="female" /> Female
+					<input name="gender" type="radio" class="form-control" value="female"/> Female
 					</label>
 				      </div>
 				    </div>
@@ -111,13 +111,13 @@ $template = new Template();
 				      <label class="col-sm-2 control-label" >Marital status:</label>
 				      <div class="radio col-sm-3">
 					<label>
-					<input name="maritial_status" type="radio" class="form-control" value="single" /> Single
+					<input name="maritial_status" type="radio" class="form-control" value="single" selected="selected" /> Single
 					</label>
 				      </div>
 				      
 				      <div class="radio col-sm-3">
 					<label>
-					<input name="maritial_status" type="radio" class="form-control" value="married" /> Married
+					<input name="maritial_status" type="radio" class="form-control" value="married"  /> Married
 				        </label>
 				    </div>
 				      </div>
